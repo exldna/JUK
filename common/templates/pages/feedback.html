@@ -1,0 +1,17 @@
+{% extends 'header.html' %}
+
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p id="result"></p>
+        <input type="button" onclick="mail()" value="Отправить письмо">
+    </form>
+    {% if has_result %}
+    <p>Тема: {{ subject }}</p>
+    <p>Письмо: {{ message }}</p>
+    <p>Ваша почта: {{ user_mail }}</p>
+    {% endif %}
+</body>
+
+{% extends 'footer.html' %}

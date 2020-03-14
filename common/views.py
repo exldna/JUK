@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .models import Profile
 from .forms import LoginForm, SignUpForm
+from django.core.mail import send_mail
 
 
 def _get_base_context(title, sign_in_button=True):
@@ -71,3 +72,22 @@ def signup_view(request):
 def logout_view(request):
     logout(request)
     return redirect('/')
+
+def feedback_view(request):
+    is_message = request.method == 'POST'
+    context = {
+        "has_result": False,
+    }
+    if is_message:
+        subject = ''
+        message = ''
+        user_mail = ''
+        mail = 'kirill_ivanchik@mail.ru'
+        context.update({
+            "subject": subject,
+            "message": message,
+            "user_mail": user_mail,
+        })
+    send_mail(subject, message, user_mail,
+              [mail], fail_silently=False)
+    return render(request, 'pages/feedback.html', context)

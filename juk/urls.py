@@ -26,4 +26,5 @@ urlpatterns = [
     path('accounts/logout/', common_views.logout_view, name='logout'),
     path('accounts/signup/', common_views.signup_view, name='signup'),
     path('news/', manager_views.news_page, name='news'),
+    path('feedback/', common_views.feedback_view, name='feedback'),
 ]
