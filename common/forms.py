@@ -10,7 +10,8 @@ class LoginForm(forms.Form):
 
 class SignUpForm(UserCreationForm):
     email = forms.EmailField(max_length=254)
+    role = forms.ChoiceField(choices=[('role1', 'role1'), ('role2', 'role2')], widget=forms.RadioSelect)
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password1', 'password2',)
+        fields = ('username', 'email', 'password1', 'password2', 'role',)
