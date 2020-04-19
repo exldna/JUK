@@ -1,7 +1,11 @@
-<footer class="footer mt-auto py-3 bg-dark">
+<footer class="footer mt-auto py-3">
     <div class="container">
         {% block footer %}
-        <span class="text-muted"> s104, {% now "Y" %}.</span>
+        <div style="word-spacing: 15px;">
+            <font color="{{ footer_text_color1 }}">
+                s104 <font color="{{ footer_text_color2 }}">{% now "Y" %}</font>
+            </font>
+        </div>
         {% endblock %}
     </div>
 </footer>

@@ -15,12 +15,28 @@
     <link href="https://getbootstrap.com/docs/4.2/examples/sticky-footer-navbar/sticky-footer-navbar.css"
           rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }} static/css/btn.css">
+    <style>
+        body {
+            background-color: {{ background_color }};
+        }
+
+        nav {
+            background: {{ header_color }} !important;
+        }
+
+        footer {
+            background: {{ footer_color }} !important;
+        }
+
+
+
+    </style>
 
     {% block extra_css %}{% endblock %}
+
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column h-100">
 
 {% block header %}
 {% include 'header.html' %}

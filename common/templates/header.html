@@ -1,25 +1,25 @@
 <header>
     <div class="container">
         {% block header %}
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+        <nav class="navbar navbar-expand-md fixed-top" background-color="{{ header_color }}">
             <div class="container">
-                <a clas/home/s104s="navbar-brand" href="{% url 'index' %}">
-                    JUK
-                </a>
-                {% if if_sign_but %}
-                {% if request.user.is_authenticated %}
+                <a class="navbar-brand" href="{% url 'index' %}"><font color="{{ header_text_color1 }}">JUK</font></a>
                 <ul class="navbar-nav mr-right">
+                    {% if if_sign_but %}
+                    {% if request.user.is_authenticated %}
                     <div class="navbar-text">
-                        Здравствуйте, {{ request.user.username }}
+                        <font color="{{ header_text_color2 }}">
+                                Здравствуйте, {{ request.user.username }}
+                        </font>
                     </div>
-                    <li class="nav-item active"><a class="nav-link" href="{% url 'logout' %}">Выйти</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'logout' %}"><font
+                            color="{{ header_text_color1 }}">Выйти</font></a></li>
+                    {% else %}
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'login' %}"><font
+                            color="{{ header_text_color1 }}">Войти</font></a></li>
+                    {% endif %}
+                    {% endif %}
                 </ul>
-                {% else %}
-                <ul class="navbar-nav mr-right">
-                    <li class="nav-item active"><a class="nav-link" href="{% url 'login' %}">Войти</a></li>
-                </ul>
-                {% endif %}
-                {% endif %}
             </div>
         </nav>
         {% endblock %}

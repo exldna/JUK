@@ -1,14 +1,21 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .forms import LoginForm, SignUpForm
-from django.http import HttpResponseRedirect
-from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from .forms import FeedbackForm
 
 
-def _get_base_context(title, sign_in_button=True):
+def get_base_context(title, sign_in_button=True):
     context = {
+
+        'background_color': '#E6F9FF',
+        'header_color': '#00BFFF',
+        'header_text_color1': '#E6F9FF',
+        'header_text_color2': '#3397B8',
+        'footer_color': '#3397B8',
+        'footer_text_color1': '#E6F9FF',
+        'footer_text_color2': '#00759C',
+
         'title': title,
         'if_sign_but': sign_in_button,
 
@@ -17,12 +24,12 @@ def _get_base_context(title, sign_in_button=True):
 
 
 def index_view(request):
-    context = _get_base_context('JUK')
+    context = get_base_context('JUK')
     return render(request, 'pages/index.html', context)
 
 
 def login_view(request):
-    context = _get_base_context('login', False)
+    context = get_base_context('login', False)
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -43,16 +50,15 @@ def login_view(request):
     else:
         form = LoginForm()
     context.update({'form': form})
-    return render(request, 'accounts/login/login_page.html', context)
+    return render(request, 'pages/accounts/login/login_page.html', context)
 
 
 def signup_view(request):
-    context = _get_base_context('sign up', False)
+    context = get_base_context('sign up', False)
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            print('save form')
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
@@ -67,7 +73,7 @@ def signup_view(request):
         context.update({
             'form': SignUpForm(),
         })
-    return render(request, 'accounts/signup/signup_page.html', context)
+    return render(request, 'pages/accounts/signup/signup_page.html', context)
 
 
 def logout_view(request):
@@ -76,6 +82,8 @@ def logout_view(request):
 
 
 def feedback(request):
+    context = get_base_context('feedback')
+
     if request.method == "POST":
         form = FeedbackForm(request.POST)
 
@@ -87,14 +95,14 @@ def feedback(request):
             subject_back = 'Отзывы о JUK'
             message_back = 'Ваш отзыв успешно отправлен'
 
-            context = {
+            context.update({
                 'subject': subject,
                 'message': message,
                 'user_mail': user_mail,
 
-            }
+            })
 
-            message = 'Отправитель: ' + user_mail + '\n'\
+            message = 'Отправитель: ' + user_mail + '\n' \
                       + '\n' + message
 
             # TODO: оформление при помощи django forms
@@ -112,4 +120,4 @@ def feedback(request):
         else:
             pass
 
-    return render(request, 'pages/feedback.html')
+    return render(request, 'pages/feedback.html', context)
