@@ -2,8 +2,34 @@
 
 {% block content %}
 
-{% for tenant in data %}
-{{ tenant }}
-{% endfor %}
+<table class="table table-sm table-hover">
+
+  <caption>Список жильцов</caption>
+
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Дом</th>
+        <th scope="col">Профиль</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% for tenant in data %}
+
+    <tr>
+        <th scope="row">{{ tenant }}</th>
+        <td>{{ tenant }}</td>
+        <td>{{ tenant }}</td>
+        <td>{{ tenant }}</td>
+        <td>{{ tenant }}</td>
+    </tr>
+
+    {% endfor %}
+
+    </tbody>
+</table>
 
 {% endblock %}
