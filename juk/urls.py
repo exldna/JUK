@@ -30,4 +30,4 @@ urlpatterns = [
     path('news/', manager_views.news_page, name='news'),
     path('news/create_news/', manager_views.create_news_page, name='create_news'),
     path('profile/', tenant_views.profile, name='profile'),
-]
+] 
