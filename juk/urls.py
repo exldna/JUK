@@ -33,6 +33,7 @@ urlpatterns = [
 
     path('manager/news/', manager_views.news_page, name='news'),
     path('manager/news/create/', manager_views.create_news_page, name='create_news'),
+    path('manager/list_of_tenants', manager_views.list_of_tenants, name='list_of_tenants'),
 
     path('tenant/profile/', tenant_views.profile, name='profile'),
 ]

@@ -7,10 +7,6 @@ class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     # photo = models.ImageField(upload_to='users/', blank=True)
 
-class Profile(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    # photo = models.ImageField(upload_to='users/', blank=True)
-
 
 class Company(models.Model):
     title = models.CharField(max_length=150)
