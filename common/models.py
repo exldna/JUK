@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.db.models import signals
 
 
 class Profile(models.Model):
@@ -31,6 +32,13 @@ class Tennant(models.Model):
 	house = models.ForeignKey(House, on_delete=models.CASCADE)
 
 
-
+class Feedback(models.Model):
+    author = models.CharField(max_length=50)
+    title = models.CharField(max_length=200)
+    text = models.TextField()
+    mail = models.CharField(max_length=50)
+    finished = models.BooleanField()
+    title_back = models.CharField(max_length=50)
+    text_back = models.CharField(max_length=50)
 
 

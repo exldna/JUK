@@ -134,3 +134,11 @@ EMAIL_PORT = 2525
 EMAIL_HOST_USER = 'juk_feedback_mail@mail.ru'
 EMAIL_HOST_PASSWORD = 'feedback_mail_pass'
 EMAIL_USE_TLS = True
+
+
+# REDIS related settings
+REDIS_HOST = 'localhost'
+REDIS_PORT = '6379'
+BROKER_URL = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
+BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}
+CELERY_RESULT_BACKEND = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'

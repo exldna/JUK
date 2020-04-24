@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .models import Feedback
 
 
 class LoginForm(forms.Form):
@@ -16,17 +17,9 @@ class SignUpForm(UserCreationForm):
         fields = ('username', 'email', 'password1', 'password2',)
 
 
-class FeedbackForm(forms.Form):
-    subject = forms.CharField(
-        label='Тема',
-        max_length=30
-    )
-    message = forms.CharField(
-        label='Содержание',
-        max_length=300
-    )
-    user_mail = forms.CharField(
-        label='Ваша почта',
-        max_length=30
-    )
+class FeedbackForm(forms.ModelForm):
 
+
+    class Meta:
+        model = Feedback
+        fields = ('author', 'title', 'text',)

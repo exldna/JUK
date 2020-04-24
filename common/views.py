@@ -75,41 +75,20 @@ def logout_view(request):
     return redirect('/')
 
 
-def feedback(request):
+def feedback_new(request):
     if request.method == "POST":
         form = FeedbackForm(request.POST)
-
         if form.is_valid():
-            subject = str(form.data['subject'])
-            message = str(form.data['message'])
-            user_mail = str(form.data['user_mail'])
-            mail = 'juk_feedback_mail@mail.ru'
-            subject_back = 'Отзывы о JUK'
-            message_back = 'Ваш отзыв успешно отправлен'
+            post = form.save(commit=False)
+            #post.mail = 'juk_feedback_mail@mail.ru'
+            post.title_back = 'Отзывы о JUK'
+            post.text_back = 'Ваш отзыв успешно отправлен'
+            post.finished = 0
 
-            context = {
-                'subject': subject,
-                'message': message,
-                'user_mail': user_mail,
+            post.text = 'Отправитель: ' + post.author + '\n' + '\n' + post.text
 
-            }
-
-            message = 'Отправитель: ' + user_mail + '\n'\
-                      + '\n' + message
-
-            # TODO: оформление при помощи django forms
-            # TODO: валидация входных параметров
-
-            message = 'Отправитель: ' + user_mail + '\n' + '\n' + message
-
-            # TODO: вынести отправку письма в отдельный субпроцесс (при помощи celery)
-            send_mail(subject, message, mail,
-                      [mail], fail_silently=False)
-
-            send_mail(subject_back, message_back, mail,
-                      [user_mail], fail_silently=False)
-
-        else:
-            pass
-
-    return render(request, 'pages/feedback.html')
+            post.save()
+            return render(request, 'pages/feedback.html', {'form': form})
+    else:
+        form = FeedbackForm()
+    return render(request, 'pages/feedback.html', {'form': form})
