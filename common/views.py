@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from .forms import FeedbackForm
+from .models import Feedback
 
 
 def _get_base_context(title, sign_in_button=True):
@@ -76,11 +77,21 @@ def logout_view(request):
 
 
 def feedback_new(request):
+
+    feedbacks = Feedback.objects.all()[::-1]
+
+    context = {
+        'feedbacks': feedbacks,
+    }
+
     if request.method == "POST":
         form = FeedbackForm(request.POST)
+        context.update({
+            'form': form,
+        })
         if form.is_valid():
             post = form.save(commit=False)
-            #post.mail = 'juk_feedback_mail@mail.ru'
+            post.mail = 'juk_feedback_mail@mail.ru'
             post.title_back = 'Отзывы о JUK'
             post.text_back = 'Ваш отзыв успешно отправлен'
             post.finished = 0
@@ -88,7 +99,10 @@ def feedback_new(request):
             post.text = 'Отправитель: ' + post.author + '\n' + '\n' + post.text
 
             post.save()
-            return render(request, 'pages/feedback.html', {'form': form})
+            return redirect('/feedback', context)
     else:
         form = FeedbackForm()
-    return render(request, 'pages/feedback.html', {'form': form})
+        context.update({
+            'form': form,
+        })
+    return render(request, 'pages/feedback.html', context)

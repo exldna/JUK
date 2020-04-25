@@ -19,7 +19,6 @@ class SignUpForm(UserCreationForm):
 
 class FeedbackForm(forms.ModelForm):
 
-
     class Meta:
         model = Feedback
         fields = ('author', 'title', 'text',)

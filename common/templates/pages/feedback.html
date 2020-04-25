@@ -9,6 +9,11 @@
         <input type="submit" value="Send">
     </form>
 
+    {% for post in feedbacks %}
+        <h3>{{ post.author }}</h3>
+        <p>{{ post.title }}</p>
+        <p>{{ post.text }}</p>
+    {% endfor %}
 
 {% endblock %}
 
