@@ -66,6 +66,13 @@ class Tenant(models.Model):
 
 
 class Manager(models.Model):
+    """
+        Модель работника УК
+
+        :param user: Пользователь
+        :param photo: фото жителя
+        :param company: УК работника
+        """
     user = models.OneToOneField(
         User,
         on_delete=models.CASCADE,

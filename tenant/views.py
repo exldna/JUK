@@ -71,6 +71,7 @@ def redact_profile_view(request):
     Изменение профиля
 
     :param request: объект с деталями запроса.
+    :type request: :class:`django.http.HttpRequest`
     :return: объект ответа сервера с HTML-кодом внутри
     """
     user = request.user
@@ -321,6 +322,13 @@ def thread(request, discussion_id, thread_id):
 
 @login_required
 def company_appeals_view(request):
+    """
+    Отображение моих обращений
+
+    :param request: объект c деталями запроса
+    :type request: :class:`django.http.HttpRequest`
+    :return: отображение страницы
+    """
     context = {}
     if hasattr(request.user, 'tenant'):
         my_appeals = request.user.tenant.appeal_set.all()
@@ -338,7 +346,7 @@ def my_appeals_view(request):
 
     :param request: объект c деталями запроса
     :type request: :class:`django.http.HttpRequest`
-    :return: отображзение страницы
+    :return: отображение страницы
     """
     context = {}
     if hasattr(request.user, 'tenant'):
@@ -405,6 +413,13 @@ def appeal_view(request, appeal_id):
 
 @login_required
 def cr_appeal_view(request):
+    """
+    Создание обращения
+
+    :param request: объект c деталями запроса
+    :type request: :class:`django.http.HttpRequest`
+    :return: объект ответа сервера с HTML-кодом внутри
+    """
     context = {}
     if request.method == 'POST':
         theme = request.POST.get('theme')
@@ -547,6 +562,14 @@ def help_view(request):
 
 @login_required
 def task_view(request, id):
+    """
+    Обзор задания
+
+    :param request: объект c деталями запроса
+    :type request: :class:`django.http.HttpRequest`
+    :param id: id задания
+    :return: объект ответа сервера с HTML-кодом внутри
+    """
     task = Task.objects.get(pk=id)
     if hasattr(request.user, 'tenant'):
         my_task = request.user == task.author
@@ -575,6 +598,13 @@ def task_view(request, id):
 
 @login_required
 def test_view(request):
+    """
+    Прохождение теста для волонтёров
+
+    :param request: объект c деталями запроса
+    :type request: :class:`django.http.HttpRequest`
+    :return: объект ответа сервера с HTML-кодом внутри
+    """
     context = {
         "user": request.user,
     }

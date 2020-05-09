@@ -19,4 +19,7 @@ class EditProfileForm(forms.ModelForm):
 
 
 class PhotoUpload(forms.Form):
+    """
+    Форма изменения фотографии
+    """
     photo = forms.ImageField()
