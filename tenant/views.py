@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import AnonymousUser
 from django.contrib.auth.models import User
-from .models import Company, House, Forum, Discussion, Comment, Tenant, Appeal, AppealMessage, Task
+from .models import Company, House, Forum, Discussion, Comment, Tenant, Appeal, AppealMessage, Task, Manager
 import datetime
 import pytz
 
@@ -158,17 +158,17 @@ class Category:
         return self.list_of_discussions()
 
 
-def forum_view(request, forum_id):
+def forum_view(request,id):
     """
     Отображение форума с конкретным id
 
     :param request: объект c деталями запроса
     :type request: :class:`django.http.HttpRequest`
-    :param forum_id: primary key форума в БД
+    :param id: primary key форума в БД
     :return: объект ответа сервера с HTML-кодом внутри
     """
     context = {}
-    forum = Forum.objects.get(pk=forum_id)
+    forum = Forum.objects.get(pk=id)
     owner = ("house" if forum.house else "company")
     # request.user.id is not AnonymousUser:
     if owner == "house":
@@ -191,18 +191,18 @@ def forum_view(request, forum_id):
     return render(request, 'pages/tenant/forum.html', context)
 
 
-def category_view(request, forum_id, category_name):
+def category_view(request, id, category_name):
     """
     Отображение категорий, принадлежащих форуму с конкретным id
 
     :param request: объект c деталями запроса
     :type request: :class:`django.http.HttpRequest`
-    :param forum_id: primary key форума в БД
+    :param id: primary key форума в БД
     :param category_name: название категории
     :return: объект ответа сервера с HTML-кодом внутри
     """
     context = {}
-    forum = Forum.objects.get(pk=forum_id)
+    forum = Forum.objects.get(pk=id)
     discussions = list(Discussion.objects.filter(category=category_name, forum=forum))
     discussions.reverse()
     context.update({
@@ -228,32 +228,46 @@ def discussion_view(request, discussion_id):
         if request.user.id is AnonymousUser:
             return redirect('/login')
         text = request.POST.get('text')
+        if Manager.objects.filter(user=request.user).exists():
+            role = "Менеджер"
+        else:
+            role = "Житель"
         comment = Comment.objects.create(
             text=text,
             discussion=discussion,
             author=request.user,
             cr_date=datetime.datetime.now(pytz.timezone("Europe/Moscow")),
+            role = role
         )
         comment.save()
     comments = discussion.comment_set.all()
     comments = list(comments)
     comments.reverse()
+    answered = False
+    for item in comments:
+            if item.role == "Менеджер":
+                answer = item
+                context.update({
+                    "answer": answer,
+                })
+                answered = True
     context.update({
         "user": request.user,
         "discussion": discussion,
         "comments": comments,
+        "answered": answered
     })
     return render(request, 'pages/tenant/discussion.html', context)
 
 
 @login_required
-def cr_discussion_view(request, forum_id):
+def cr_discussion_view(request, id):
     """
     Создание обсуждения
 
     :param request: объект c деталями запроса
     :type request: :class:`django.http.HttpRequest`
-    :param forum_id: primary key форума в БД
+    :param id: primary key форума в БД
     :return: объект ответа сервера с HTML-кодом внутри в случае, если идёт GET-запрос на страницу
     :return: перенаправление на главную страницу в случае POST-запроса
     """
@@ -267,15 +281,15 @@ def cr_discussion_view(request, forum_id):
         discussion = Discussion(
             theme=theme,
             category=category,
-            forum=Forum.objects.get(pk=forum_id),
+            forum=Forum.objects.get(pk=id),
             description=description,
             author=request.user,
             cr_date=datetime.datetime.now(),
             anon_allowed=anonymous,
         )
         discussion.save()
-        return redirect('/forum/discussion/' + str(discussion.forum_id))
-    forum = Forum.objects.get(pk=forum_id)
+        return redirect('/forum/discussion/' + str(discussion.id))
+    forum = Forum.objects.get(pk=id)
     categories = list(forum.categories.split('|'))
     context.update({
         "categories": categories,
@@ -297,7 +311,7 @@ def thread(request, discussion_id, thread_id):
     """
     current_thread = Comment.objects.get(id=thread_id)
     discussion = Discussion.objects.get(id=discussion_id)
-    comments = Comment.objects.filter(thread=thread)
+    comments = Comment.objects.filter(thread=current_thread)
     context = {
         "user": request.user,
         "comments": comments,

@@ -155,6 +155,8 @@ class Comment(models.Model):
         to=User,
         on_delete=models.CASCADE
     )
+
+    role = models.TextField(default = "Житель")
     cr_date = models.DateTimeField()
     thread = models.ForeignKey(
         to='Comment',

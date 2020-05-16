@@ -137,9 +137,12 @@ border: 1px solid #FFFFF;
 
 </style>
 
-
  <form action='' id="comment" method="post">
             {% csrf_token %}
+     <br>
+     <div class="fixed-top">
+        <a class="nav-link" href="#end" > Вниз </a>
+     </div>
      <div class="theme">
          <div class="col">
              <div style="margin: 10px 20px;">
@@ -153,7 +156,9 @@ border: 1px solid #FFFFF;
              </div>
          </div>
      </div>
-
+    {% if answered %}
+     <a class="nav-link" href="#{{answer}}">Ответ менеджера УК</a>
+     {% endif %}
      <div class="form-group row">
          <div class="col-1"></div>
          <div class="col-11">
@@ -169,8 +174,11 @@ border: 1px solid #FFFFF;
      </div>
 
 {% for item in comments %}
-
-<div class="form-group row">
+<div class="form-group row" class="col" >
+     <div id = "{{item}}"></div>
+    <br>
+</div>
+<div class="form-group row" >
     <div class="col-1"></div>
     <div class="col-1.5">
         <div class="alert shadow" style="background-color: #FFFFFF; color:#F25CA2;" role="alert">
@@ -178,7 +186,7 @@ border: 1px solid #FFFFF;
             <div class="media">
                 <img src="{{ user.manager.photo.url }}"  width="140" height="140"  align = "left" alt="...">
             </div>
-            <div align = "center"> Роль </div>
+             <div align = "center"> {{item.role}} </div>
         </div>
     </div>
     <div class="col-9">
@@ -195,5 +203,10 @@ border: 1px solid #FFFFF;
 </div>
 
 {% endfor %}
-        </form>
+     <div class="form-group row" class="col" >
+     <div id = "end"></div>
+    <br>
+</div>
 {% endblock %}
+
+        </form>
