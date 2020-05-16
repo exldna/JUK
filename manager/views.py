@@ -5,7 +5,7 @@ import datetime
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .forms import CreateNewsForm
-from .models import News
+from .models import News, Pass
 from tenant.models import Appeal, House, Forum
 
 
@@ -106,3 +106,29 @@ def add_house_view(request):
         forum.save()
         return redirect('/')
     return render(request, 'pages/manager/add_house.html', context)
+
+
+@login_required
+def pass_view(request):
+    context = {
+        'company_name': request.user.company,
+        'house_list': House.objects.filter(company=request.user.company),
+
+    }
+    return render(request, 'manager_pass.html', context)
+
+
+@login_required
+def pass_list_view(request, house_id):
+    human_passes = Pass.objects.filter(status='active', target='person'),
+    car_passes = Pass.objects.filter(status='active', target='car'),
+    house = House.objects.get(id=house_id)
+
+    context = {
+        'human_passes': human_passes,
+        'car_passes': car_passes,
+        'house_id': house_id,
+        'house': house,
+    }
+    return render(request, 'pass_list.html', context)
+

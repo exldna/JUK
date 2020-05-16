@@ -331,6 +331,7 @@ def company_appeals_view(request):
     })
     return render(request, 'pages/tenant/my_appeals.html', context)
 
+
 @login_required
 def my_appeals_view(request):
     """
@@ -349,6 +350,7 @@ def my_appeals_view(request):
         "my_appeals": my_appeals,
     })
     return render(request, 'pages/tenant/my_appeals.html', context)
+
 
 class Message:
     """

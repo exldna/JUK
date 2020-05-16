@@ -248,6 +248,9 @@ class Task(models.Model):
 
 
 class Pass(models.Model):
+    """
+    Модель БД для пропусков
+    """
     author = models.ForeignKey(to=User, on_delete=models.CASCADE())
     cr_date = models.DateTimeField(auto_now=True)
     status = models.TextField(max_length=7)
