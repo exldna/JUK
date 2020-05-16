@@ -180,6 +180,18 @@ border: 1px solid #FFFFF;
 </div>
 <div class="form-group row" >
     <div class="col-1"></div>
+    {% if item.role == "Менеджер" %}
+    <div class="col-1.5">
+        <div class="alert shadow" style="background-color:     #FFD700; color:#F25CA2;" role="alert">
+            <div align = "center"> {{item.author}} </div>
+            <div class="media">
+                <img src="{{ user.manager.photo.url }}"  width="140" height="140"  align = "left" alt="...">
+            </div>
+             <div align = "center"> {{item.role}} </div>
+        </div>
+    </div>
+    {% endif %}
+        {% if item.role == "Житель" %}
     <div class="col-1.5">
         <div class="alert shadow" style="background-color: #FFFFFF; color:#F25CA2;" role="alert">
             <div align = "center"> {{item.author}} </div>
@@ -189,6 +201,7 @@ border: 1px solid #FFFFF;
              <div align = "center"> {{item.role}} </div>
         </div>
     </div>
+    {% endif %}
     <div class="col-9">
         <div class="alert comment shadow" role="alert">
             {{item.text}}
