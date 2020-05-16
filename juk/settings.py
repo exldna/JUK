@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'manager',
     'django.contrib.sites',  # Required for determining domain url for use in emails,
     'django.contrib.humanize',  # Required for elapsed time formatting
+    'django_markdown',
 ]
 
 MIDDLEWARE = [

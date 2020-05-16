@@ -3,6 +3,7 @@
 """
 from django.db import models
 from django.contrib.auth.models import User
+from django_markdown.models import MarkdownField
 
 
 class Company(models.Model):
@@ -40,7 +41,6 @@ class Tenant(models.Model):
         :param is_vol: является ли житель волонтёром
         :param test_date: Время последнего прохождения (None eсли попыток не было)
         """
-
     user = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
@@ -150,7 +150,7 @@ class Comment(models.Model):
         :param author: Автор комментария
         :param cr_date: Дата создания комментария
         """
-    text = models.TextField()
+    text = MarkdownField()
     discussion = models.ForeignKey(
         to=Discussion,
         on_delete=models.CASCADE

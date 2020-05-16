@@ -11,3 +11,4 @@ asgiref==3.2.3
 pytz==2019.3
 Sphinx==3.0.1
 Pillow==7.1.2
+Markdown==3.2.2
