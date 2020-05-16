@@ -245,3 +245,18 @@ class Task(models.Model):
     status = models.TextField(
         max_length=10
     )
+
+
+class Pass(models.Model):
+    author = models.ForeignKey(to=User, on_delete=models.CASCADE())
+    cr_date = models.DateTimeField(auto_now=True)
+    status = models.TextField(max_length=7)
+    target = models.TextField(max_length=6)
+    name = models.TextField(null=True, blank=True, max_length=20)
+    surname = models.TextField(null=True, blank=True, max_length=20)
+    patronymic = models.TextField(null=True, blank=True, max_length=20)
+    model = models.TextField(null=True, blank=True, max_length=20)
+    color = models.TextField(null=True, blank=True, max_length=20)
+    number = models.TextField(null=True, blank=True, max_length=20)
+    aim = models.TextField(max_length=40)
+
