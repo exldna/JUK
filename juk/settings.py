@@ -19,27 +19,34 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'g1=^$kimw8_fe+xkcr#3@*b!iinx$-sia)ykd#!dd0%t=1a7cm'
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+DEBUG = bool(os.environ.get('JUK_DEBUG', True))
+
+if DEBUG:
+    ALLOWED_HOSTS = []
+    SECRET_KEY = 'g1=^$kimw8_fe+xkcr#3@*b!iinx$-sia)ykd#!dd0%t=1a7cm'
+else:
+    ALLOWED_HOSTS = ['127.0.0.1', 'shp-juk.gq']
+    SECRET_KEY = os.environ.get("JUK_SECRET_KEY", 'Dummy secret key')
 
 
 # Application definition
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'juk',
     'common',
     'tenant',
     'manager',
+    'django.contrib.sites',  # Required for determining domain url for use in emails,
+    'django.contrib.humanize',  # Required for elapsed time formatting
 ]
 
 MIDDLEWARE = [
@@ -58,7 +65,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates',
+            'common/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -78,12 +85,24 @@ WSGI_APPLICATION = 'juk.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.environ.get("JUK_MYSQL_DATABASE", 'define me'),
+            'USER': os.environ.get("JUK_MYSQL_USER", 'define me'),
+            'PASSWORD': os.environ.get("JUK_MYSQL_PASSWORD", 'define me'),
+            'HOST': os.environ.get("JUK_MYSQL_HOST", 'localhost'),
+            'PORT': os.environ.get("JUK_MYSQL_PORT", '3306'),
+        }
+    }
 
 
 # Password validation
@@ -118,13 +137,26 @@ USE_L10N = True
 
 USE_TZ = True
 
+SITE_ID = 1
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, "static"),
 ]
+STATIC_ROOT = 'staticroot/'
 
 LOGIN_REDIRECT_URL = '/'
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 2525
+EMAIL_HOST_USER = 'juk_feedback_mail@mail.ru'
+EMAIL_HOST_PASSWORD = 'feedback_mail_pass'
+EMAIL_USE_TLS = True
+
+
+# Path for media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

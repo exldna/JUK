@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+{% if is_tenant %}
+    {% include "pages/tenant/blocks/tenant_redact_profile.html" %}
+{% endif %}
+
+{% if is_manager %}
+    {% include "pages/tenant/blocks/manager_redact_profile.html" %}
+{% endif %}
+
+
+
+
+{% endblock %}

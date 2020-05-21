@@ -1,0 +1,6 @@
+[merge]
+    tool = meld
+[mergetool "meld"]
+    keepBackup = false
+    trustExitCode = false
+    cmd = meld \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output \"$MERGED\"

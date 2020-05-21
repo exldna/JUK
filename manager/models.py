@@ -1,9 +1,26 @@
+"""
+Используемые модули
+"""
 from django.db import models
 from django.contrib.auth.models import User
-# Create your models here.
+from tenant.models import Company
+
 
 class News(models.Model):
-    companyName = models.CharField(max_length=50)
-    publicationDate = models.DateTimeField('date published')
-    publicationTitle = models.CharField(max_length=50)
-    publicationText = models.TextField(max_length=5000)
+    """
+    Модель БД для новостей
+    """
+    company = models.ForeignKey(
+        to=Company,
+        on_delete=models.CASCADE,
+    )
+    publicationDate = models.DateTimeField(
+        'date published'
+    )
+    publicationTitle = models.CharField(
+        max_length=50
+    )
+    publicationText = models.TextField(
+        max_length=5000
+    )
+
