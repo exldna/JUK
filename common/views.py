@@ -76,7 +76,7 @@ def logout_view(request):
     return redirect('/')
 
 
-def feedback_new(request):
+def feedback(request):
 
     feedbacks = Feedback.objects.all()[::-1]
 
