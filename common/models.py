@@ -34,7 +34,7 @@ class Tennant(models.Model):
 
 
 class Feedback(models.Model):
-    yourmail = models.CharField(max_length=50)
+    yourmail = models.EmailField(max_length=50)
     title = models.CharField(max_length=200)
     text = models.TextField()
     mail = models.EmailField(max_length=50)
