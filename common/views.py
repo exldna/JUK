@@ -96,10 +96,10 @@ def feedback(request):
             post.text_back = 'Ваш отзыв успешно отправлен'
             post.finished = 0
 
-            post.text = 'Отправитель: ' + post.author + '\n' + '\n' + post.text
+            post.text = post.text
 
             post.save()
-            return redirect('/feedback', context)
+            return redirect('/common/feedback', context)
     else:
         form = FeedbackForm()
         context.update({

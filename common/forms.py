@@ -21,4 +21,4 @@ class FeedbackForm(forms.ModelForm):
 
     class Meta:
         model = Feedback
-        fields = ('author', 'title', 'text',)
+        fields = ('yourmail', 'title', 'text',)

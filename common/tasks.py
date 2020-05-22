@@ -12,6 +12,6 @@ def send_email():
         if mail.finished == 1:
             continue
         send_mail(mail.title, mail.text, mail.host, [mail.host], fail_silently=False)
-        send_mail(mail.title, mail.text, mail.host, [mail.author], fail_silently=False)
+        send_mail(mail.title, mail.text, mail.host, [mail.yourmail], fail_silently=False)
         mail.finished = 1
         mail.save()
