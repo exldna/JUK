@@ -104,21 +104,10 @@ def redact_profile_view(request):
         form = PhotoUpload()
     if request.method == 'POST':
         username = request.POST.get('username')
-        first_name = request.POST.get('first_name')
-        last_name = request.POST.get('last_name')
-
         user.username = username
-        user.first_name = first_name
-        user.last_name = last_name
-        user.save()
-
         request_form = ManagerRequestForm(request.POST)
         try:
-            manager_request = ManagerRequest.objects.get(
-                author_id=user.manager.user_id,
-                name=user.first_name,
-                surname=user.last_name,
-            )
+            manager_request = ManagerRequest.objects.get(author_id=user.manager.user_id)
             if manager_request.status == 3:
                 flag = 3
             elif manager_request.status == 2:
@@ -130,7 +119,7 @@ def redact_profile_view(request):
         if request_form.is_valid():
             inn = request_form.cleaned_data.get('inn_company')
             try:
-                get_company = Company.objects.get(inn=inn)
+                get_Company = Company.objects.get(inn=inn)
                 permission = 1
             except BaseException:
                 permission = 0
@@ -166,7 +155,6 @@ def redact_profile_view(request):
         "companies": Company.objects.all(),
     })
     return render(request, 'pages/manager/redact_profile.html', context)
-
 
 def news_page(request):
     """
