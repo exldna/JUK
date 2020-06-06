@@ -244,6 +244,8 @@ def my_news_page_view(request):
             record = News.objects.filter(company=request.user.manager.company)
         if hasattr(request.user, 'tenant'):
             record = News.objects.filter(company=request.user.tenant.house.company)
+        record = list(record)
+        record.reverse()
         context.update({
             "is_tenant": hasattr(request.user, 'tenant'),
             "is_manager": hasattr(request.user, 'manager'),
@@ -276,7 +278,7 @@ def create_news_page_view(request):
     context = {
         'user': request.user,
     }
-    if request.user.manager.company.ya_num != -1:
+    if request.user.manager.company.ya_num != '-1':
         context.update({"donation_possible": 1})
     if request.method == 'POST':
         createnews = CreateNewsForm(request.POST)
@@ -321,7 +323,7 @@ def news_page(request, news_id):
     link = "https://money.yandex.ru/quickpay/shop-widget?w" \
            "riter=buyer&targets=&targets-hint=&default-sum=100&" \
            "button-text=14&payment-type-choice=on&hint=" \
-           "&successURL=&quickpay=shop&account=" + str(news.company.ya_num)
+           "&successURL=&quickpay=shop&account=" + news.company.ya_num
     if request.user is AnonymousUser:
         return redirect('/')
     else:
