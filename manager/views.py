@@ -105,7 +105,6 @@ def manager_main_page(request):
         request.user.is_superuser = 1
         request.user.save()
         request.user.manager.save()
-
     return render(request, 'pages/manager/manager.html', context)
 
 
