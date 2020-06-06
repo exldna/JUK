@@ -42,6 +42,7 @@ def index_view(request):
     :type request: :class:`django.http.HttpRequest`
     :return: Отображение страницы
     """
+
     context = _get_base_context('JUK')
     if request.user is not AnonymousUser:
         context.update({

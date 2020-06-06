@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .models import News
 from .models import RegManager
+from martor.fields import MartorFormField
 
 
 class EditProfileForm(forms.ModelForm):
@@ -24,6 +25,8 @@ class CreateNewsForm(forms.ModelForm):
     """
     Форма создания новостей
     """
+    publicationText = MartorFormField()
+    
     class Meta:
         model = News
         # manager/forms.py

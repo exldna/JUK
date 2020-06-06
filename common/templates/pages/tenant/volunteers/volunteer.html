@@ -75,7 +75,30 @@ margin:10px auto 0;
         <div class="category">
             <p style="font-size: 22pt; text-align: center;">Открытые задания для выполнения</p>
             {% for task in opened_tasks %}
-            <a style="color: var(--mdc-theme-primary)" href="{% url 'task' task_id=task.id %}">{{ task.description }}</a><br><br>
+                {% if task.author.tenant %}
+                    <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                            <a href="{% url 'task' task_id=task.id %}">
+                            <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.first_name }} {{ task.author.last_name }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                                    <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                            </div>
+                            </a>
+                    </div>
+                {% elif task.author.manager %}
+                    <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                            <a href="{% url 'task' task_id=task.id %}">
+                            <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.manager.company.name }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                                    <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                            </div>
+                            </a>
+                    </div>
+                {% endif %}
+                <br>
             {% endfor %}
         </div>
     </div>
@@ -83,13 +106,59 @@ margin:10px auto 0;
         <div class="category">
             <p style="font-size: 22pt; text-align: center;">Задания за которые вы взялись</p>
             {% for task in taken_tasks %}
-            <a style="color: var(--mdc-theme-primary)" href="{% url 'task' task_id=task.id %}"> {{ task.description }}</a><br><br>
+                {% if task.author.tenant %}
+                    <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                            <a href="{% url 'task' task_id=task.id %}">
+                            <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.first_name }} {{ task.author.last_name }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                                    <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                            </div>
+                            </a>
+                    </div>
+                {% elif task.author.manager %}
+                    <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                            <a href="{% url 'task' task_id=task.id %}">
+                            <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.manager.company.name }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                                    <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                            </div>
+                            </a>
+                    </div>
+                {% endif %}
+                <br>
             {% endfor %}
         </div>
         <div class="category">
             <p style="font-size: 22pt; text-align: center;">Задания, которые вы выполнили</p>
             {% for task in closed_tasks %}
-            <a style="color: var(--mdc-theme-primary)" href="{% url 'task' task_id=task.id %}"> {{ task.description }}</a><br><br>
+                {% if task.author.tenant %}
+                    <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                            <a href="{% url 'task' task_id=task.id %}">
+                            <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.first_name }} {{ task.author.last_name }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                                    <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                            </div>
+                            </a>
+                    </div>
+                {% elif task.author.manager %}
+                    <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                            <a href="{% url 'task' task_id=task.id %}">
+                            <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.manager.company.name }}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                                    <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                            </div>
+                            </a>
+                    </div>
+                {% endif %}
+                <br>
             {% endfor %}
         </div>
     </div>

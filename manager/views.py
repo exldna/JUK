@@ -58,7 +58,7 @@ def manager_main_page(request):
             amount_of_opened_appeals += 1
 
     amount_of_unconfirmed_tenants = 0
-    for house in House.objects.all():
+    for house in request.user.manager.company.house_set.all():
         for tenant in house.tenant_set.all():
             if not tenant.house_confirmed:
                 amount_of_unconfirmed_tenants += 1
@@ -117,10 +117,6 @@ def my_cabinet_view(request):
         "user": request.user,
         "companyless": request.user.manager.company is None,
     }
-    # c = Company.objects.create(inn=666) #tmp
-    # f2 = Forum.objects.create(company=c, categories="Объявления|Другое")#tmp
-    # c.save()
-    # f2.save()
 
     context.update({
         "is_tenant": hasattr(request.user, 'tenant'),
@@ -248,6 +244,8 @@ def my_news_page_view(request):
             record = News.objects.filter(company=request.user.manager.company)
         if hasattr(request.user, 'tenant'):
             record = News.objects.filter(company=request.user.tenant.house.company)
+        record = list(record)
+        record.reverse()
         context.update({
             "is_tenant": hasattr(request.user, 'tenant'),
             "is_manager": hasattr(request.user, 'manager'),
@@ -280,7 +278,7 @@ def create_news_page_view(request):
     context = {
         'user': request.user,
     }
-    if request.user.manager.company.ya_num != -1:
+    if request.user.manager.company.ya_num != '-1':
         context.update({"donation_possible": 1})
     if request.method == 'POST':
         createnews = CreateNewsForm(request.POST)
@@ -325,7 +323,7 @@ def news_page(request, news_id):
     link = "https://money.yandex.ru/quickpay/shop-widget?w" \
            "riter=buyer&targets=&targets-hint=&default-sum=100&" \
            "button-text=14&payment-type-choice=on&hint=" \
-           "&successURL=&quickpay=shop&account=" + str(news.company.ya_num)
+           "&successURL=&quickpay=shop&account=" + news.company.ya_num
     if request.user is AnonymousUser:
         return redirect('/')
     else:
@@ -498,7 +496,7 @@ def tenant_confirming_view(request):
             tenant.house_confirmed = True
             tenant.save()
     houses = []
-    for house in House.objects.all():
+    for house in request.user.manager.company.house_set.all():
         tenants = []
         for tenant in house.tenant_set.all():
             if not tenant.house_confirmed:
@@ -531,7 +529,7 @@ def pass_view(request):
     if not hasattr(request.user, 'manager'):
         return redirect('/')
     context = {
-        'company_name': request.user.manager.company.inn,
+        'company_name': request.user.manager.company.name,
         'house_list': House.objects.filter(company=request.user.manager.company),
     }
     context.update({

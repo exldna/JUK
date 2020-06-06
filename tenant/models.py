@@ -13,9 +13,11 @@ class Company(models.Model):
     :param name: название УК
     :param inn: инн УК
     """
-    inn = models.IntegerField()
+    inn = models.TextField()
     name = models.TextField()
-    ya_num = models.IntegerField(default=-1)
+    ya_num = models.TextField(
+        default='-1'
+    )
 
 
 class House(models.Model):
@@ -334,4 +336,4 @@ class ManagerRequest(models.Model):
         choices=statuses_requset,
         default=3
     )  # статус запроса на подключение
-    inn_company = models.IntegerField()  # ИНН УК
+    inn_company = models.TextField()  # ИНН УК
