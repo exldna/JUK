@@ -18,7 +18,6 @@ from .models import News
 # from django.contrib.messages.views import SuccessMessageMixin
 
 from .forms import RegManagerForm
-# from .models import RegManager
 from .tasks import send_email
 
 
