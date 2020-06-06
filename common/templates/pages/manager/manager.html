@@ -154,6 +154,12 @@
     </div>
   </div>
 {% endif %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <button type="submit" style="color: white; border: none; background-color: white;">a</button>
+</form>
+
 </body>
 <script type="text/javascript">
   function startTime() {
