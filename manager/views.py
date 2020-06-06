@@ -58,7 +58,7 @@ def manager_main_page(request):
             amount_of_opened_appeals += 1
 
     amount_of_unconfirmed_tenants = 0
-    for house in House.objects.all():
+    for house in request.user.manager.company.house_set.all():
         for tenant in house.tenant_set.all():
             if not tenant.house_confirmed:
                 amount_of_unconfirmed_tenants += 1
@@ -496,7 +496,7 @@ def tenant_confirming_view(request):
             tenant.house_confirmed = True
             tenant.save()
     houses = []
-    for house in House.objects.all():
+    for house in request.user.manager.company.house_set.all():
         tenants = []
         for tenant in house.tenant_set.all():
             if not tenant.house_confirmed:
