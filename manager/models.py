@@ -2,7 +2,6 @@
 Используемые модули
 """
 from django.db import models
-#from django.contrib.auth.models import User
 from martor.models import MartorField
 from tenant.models import Company
 

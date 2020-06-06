@@ -60,6 +60,40 @@ margin:10px auto 0;
  grid-gap: 10px;
 }
 
+.card{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: none;
+}
+
+.card-body{
+  border: none;
+}
+.card-header{
+  border: none;
+}
+
+
+    a {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    outline: none;
+   }
+   a:hover {
+    text-decoration: none;
+   }
+
+     .link {
+    }
+
+    .card a {
+     display: block;
+     height: 100%;
+     color: black;
+    }
+
 </style>
 
 
@@ -76,27 +110,100 @@ margin:10px auto 0;
 
     <div class="left">
 <div class="category">
-<p style="font-size: 20pt; text-align: center;">Открытые задания</p>
-{% if flag %}
-<h5> Сейчас заданий нет. Подождите или создайте своё </h5>
-{% endif %}
-{% for task in opened_tasks %}
-<a href="{% url 'task' task_id=task.id%}" style="color:var(--mdc-theme-primary)">{{ task.description }}</a><br>
-{% endfor %}
+    <h4 style="font-size: 22pt; text-align: center;">Открытые задания</h4>
+    <br>
+    {% if flag %}
+    <h5> Сейчас заданий нет. Подождите или создайте своё. </h5>
+    {% endif %}
+    {% for task in opened_tasks %}
+        {% if task.author.tenant %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.first_name }} {{ task.author.last_name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% elif task.author.manager %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.manager.company.name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% endif %}
+        <br>
+    {% endfor %}
+
 </div>
 <div class="category">
-<p style="font-size: 20pt; text-align: center;">Задания в процессе выполнения</p>
+<h4 style="font-size: 20pt; text-align: center;">Задания в процессе выполнения</h4>
+    <br>
 {% for task in taken_tasks %}
-<a href="{% url 'task' task_id=task.id%}" style="color:var(--mdc-theme-primary)">{{ task.description }}</a><br>
+        {% if task.author.tenant %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.first_name }} {{ task.author.last_name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% elif task.author.manager %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.manager.company.name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% endif %}
+        <br>
 {% endfor %}
     </div>
     </div>
 
     <div class="right">
 <div class="category">
-<p style="font-size: 20pt; text-align: center;">Закрытые задания</p>
+<h4 style="font-size: 20pt; text-align: center;">Закрытые задания</h4>
+<br>
 {% for task in closed_tasks %}
-<a href="{% url 'task' task_id=task.id%}" style="color:var(--mdc-theme-primary)">{{ task.description }}</a><br>
+        {% if task.author.tenant %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.first_name }} {{ task.author.last_name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% elif task.author.manager %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ task.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ task.author.manager.company.name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ task.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% endif %}
+        <br>
 {% endfor %}
 </div>
         </div>

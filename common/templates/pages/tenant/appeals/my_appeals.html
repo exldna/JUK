@@ -100,6 +100,31 @@
     {% endif %}
 {% for appeal in my_appeals %}
 <a href="{% url 'appeal' appeal_id=appeal.id%}"><button class="category">{{ appeal.theme }}</button></a>
+
+        {% if appeal.author.tenant %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px">
+                <a href="{% url 'appeal' appeal_id=appeal.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ appeal.theme }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ appeal.author.first_name }} {{ appeal.author.last_name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ appeal.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% elif appeal.author.manager %}
+        <div class="card link" style="width: 500px; horizontal-margin: 20px; background: #C8FFC8">
+                <a href="{% url 'task' task_id=task.id %}">
+                <p class=" card-header card-title" style="font-size: 15pt;">{{ appeal.description }}</p>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-info">Создатель: {{ appeal.author.manager.company.name }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ appeal.cr_date | date:"d.m.Y H-i"}}</h6>
+                        <p class="card-text" style="font-size: 12pt">{{ task.task }}</p>
+                </div>
+                </a>
+        </div>
+        {% endif %}
+        <br>
 {% endfor %}
 
 
