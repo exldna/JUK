@@ -117,10 +117,6 @@ def my_cabinet_view(request):
         "user": request.user,
         "companyless": request.user.manager.company is None,
     }
-    # c = Company.objects.create(inn=666) #tmp
-    # f2 = Forum.objects.create(company=c, categories="Объявления|Другое")#tmp
-    # c.save()
-    # f2.save()
 
     context.update({
         "is_tenant": hasattr(request.user, 'tenant'),
@@ -531,7 +527,7 @@ def pass_view(request):
     if not hasattr(request.user, 'manager'):
         return redirect('/')
     context = {
-        'company_name': request.user.manager.company.inn,
+        'company_name': request.user.manager.company.name,
         'house_list': House.objects.filter(company=request.user.manager.company),
     }
     context.update({

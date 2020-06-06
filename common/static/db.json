@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$180000$iAwtM6RpaWZ8$btn4ilCeDi272gCj1ddpDaJIuo+JPKpC6RSPJCAnBXc=",
-    "last_login": "2020-06-04T01:07:14.960Z",
+    "last_login": "2020-06-06T00:34:24.969Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "\u0410\u0434\u043c\u0438\u043d",
@@ -22,7 +22,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$180000$lQkmGFLcUxQJ$mNBb4569Zg2RW3JWyPN5tiXV/RguCylk40mGuhm8DLY=",
-    "last_login": "2020-06-04T15:07:15.557Z",
+    "last_login": "2020-06-06T00:33:38.478Z",
     "is_superuser": false,
     "username": "tolstoy",
     "first_name": "\u041b\u0435\u0432",
@@ -306,6 +306,24 @@
   }
 },
 {
+  "model": "auth.user",
+  "pk": 18,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$pDcimYu1Hmum$0iPoUr6laSHX6hxSfDze0BEAmDObL/R1W9xF5SbmsKY=",
+    "last_login": "2020-06-04T20:56:13.095Z",
+    "is_superuser": false,
+    "username": "manager",
+    "first_name": "\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440",
+    "last_name": "\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440\u043e\u0432",
+    "email": "manager@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-06-04T20:56:12.664Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "sessions.session",
   "pk": "0o7ss80lx4ma5aou9g61th2ux6iqoogj",
   "fields": {
@@ -322,6 +340,14 @@
   }
 },
 {
+  "model": "sessions.session",
+  "pk": "o1zadbcu6vm86peqkmyrzfnwkyjx0dd1",
+  "fields": {
+    "session_data": "ZjZlYmFkMDcxYThkODRhNTliN2I4M2IyYmRmMTdkMWUyYjc3Y2JlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhM2ZkNWVhNGY2Nzc1MWVlNTU4MTMyNzRjNDZiNDk4Mjk3NTU0MTcxIn0=",
+    "expire_date": "2020-06-20T00:34:24.979Z"
+  }
+},
+{
   "model": "common.admin",
   "pk": 1,
   "fields": {
@@ -335,7 +361,7 @@
   "model": "tenant.company",
   "pk": 1,
   "fields": {
-    "inn": 7731288482,
+    "inn": "7731288482",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u0424\u0438\u043b\u0438-\u0414\u0430\u0432\u044b\u0434\u043a\u043e\u0432\u043e\u00bb",
     "ya_num": 410018983944204
   }
@@ -344,7 +370,7 @@
   "model": "tenant.company",
   "pk": 2,
   "fields": {
-    "inn": 7721026689,
+    "inn": "7721026689",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u041a\u0443\u0437\u044c\u043c\u0438\u043d\u043a\u0438\u00bb",
     "ya_num": -1
   }
@@ -353,7 +379,7 @@
   "model": "tenant.company",
   "pk": 3,
   "fields": {
-    "inn": 7727846180,
+    "inn": "7727846180",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u042e\u0436\u043d\u043e\u0435 \u0411\u0443\u0442\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -362,7 +388,7 @@
   "model": "tenant.company",
   "pk": 4,
   "fields": {
-    "inn": 7703820360,
+    "inn": "7703820360",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u041f\u0440\u0435\u0441\u043d\u0435\u043d\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -371,7 +397,7 @@
   "model": "tenant.company",
   "pk": 5,
   "fields": {
-    "inn": 7709966213,
+    "inn": "7709966213",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0422\u0430\u0433\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -380,7 +406,7 @@
   "model": "tenant.company",
   "pk": 6,
   "fields": {
-    "inn": 7706816114,
+    "inn": "7706816114",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u042f\u043a\u0438\u043c\u0430\u043d\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -389,7 +415,7 @@
   "model": "tenant.company",
   "pk": 7,
   "fields": {
-    "inn": 7721818170,
+    "inn": "7721818170",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0416\u0443\u043b\u0435\u0431\u0438\u043d\u043e \u0440\u0430\u0439\u043e\u043d\u0430 \u0412\u044b\u0445\u0438\u043d\u043e-\u0416\u0443\u043b\u0435\u0431\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -398,7 +424,7 @@
   "model": "tenant.company",
   "pk": 8,
   "fields": {
-    "inn": 7721818162,
+    "inn": "7721818162",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0412\u044b\u0445\u0438\u043d\u043e \u0440\u0430\u0439\u043e\u043d\u0430 \u0412\u044b\u0445\u0438\u043d\u043e-\u0416\u0443\u043b\u0435\u0431\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -407,7 +433,7 @@
   "model": "tenant.company",
   "pk": 9,
   "fields": {
-    "inn": 7743087220,
+    "inn": "7743087220",
     "name": "\u0422\u0421\u0416 \u00ab\u0424\u0435\u0441\u0442\u0438\u0432\u0430\u043b\u044c\u043d\u0430\u044f 24/2\u00bb",
     "ya_num": -1
   }
@@ -416,7 +442,7 @@
   "model": "tenant.company",
   "pk": 10,
   "fields": {
-    "inn": 7736669273,
+    "inn": "7736669273",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u041b\u043e\u043c\u043e\u043d\u043e\u0441\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -425,7 +451,7 @@
   "model": "tenant.company",
   "pk": 11,
   "fields": {
-    "inn": 7734036155,
+    "inn": "7734036155",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u0430\u0441\u043d\u043e\u0434\u0430\u0440\u00bb",
     "ya_num": -1
   }
@@ -434,7 +460,7 @@
   "model": "tenant.company",
   "pk": 12,
   "fields": {
-    "inn": 7732084322,
+    "inn": "7732084322",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u043b\u043d\u0446\u0435\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -443,7 +469,7 @@
   "model": "tenant.company",
   "pk": 13,
   "fields": {
-    "inn": 7731091006,
+    "inn": "7731091006",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0435\u0442\u0443\u043d\u044c\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -452,7 +478,7 @@
   "model": "tenant.company",
   "pk": 14,
   "fields": {
-    "inn": 7729305892,
+    "inn": "7729305892",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043e\u043b\u0434\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -461,7 +487,7 @@
   "model": "tenant.company",
   "pk": 15,
   "fields": {
-    "inn": 7728123890,
+    "inn": "7728123890",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0440\u0438\u0437\u043e\u043b\u0438\u0442\u00bb",
     "ya_num": -1
   }
@@ -470,7 +496,7 @@
   "model": "tenant.company",
   "pk": 16,
   "fields": {
-    "inn": 7728091422,
+    "inn": "7728091422",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0435\u0433\u0430\u0441\u00bb",
     "ya_num": -1
   }
@@ -479,7 +505,7 @@
   "model": "tenant.company",
   "pk": 17,
   "fields": {
-    "inn": 7728042841,
+    "inn": "7728042841",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u044f\u0437\u0430\u043d\u044c\u00bb",
     "ya_num": -1
   }
@@ -488,7 +514,7 @@
   "model": "tenant.company",
   "pk": 18,
   "fields": {
-    "inn": 7727071470,
+    "inn": "7727071470",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0430\u0437\u0432\u0435\u0434\u043a\u0430 \u043d\u0435\u0434\u0440\u00bb",
     "ya_num": -1
   }
@@ -497,7 +523,7 @@
   "model": "tenant.company",
   "pk": 19,
   "fields": {
-    "inn": 7727021662,
+    "inn": "7727021662",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-15\u00bb",
     "ya_num": -1
   }
@@ -506,7 +532,7 @@
   "model": "tenant.company",
   "pk": 20,
   "fields": {
-    "inn": 7724180720,
+    "inn": "7724180720",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0440\u044f\u0437\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -515,7 +541,7 @@
   "model": "tenant.company",
   "pk": 21,
   "fields": {
-    "inn": 7724180230,
+    "inn": "7724180230",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u0432\u0440\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -524,7 +550,7 @@
   "model": "tenant.company",
   "pk": 22,
   "fields": {
-    "inn": 7721061891,
+    "inn": "7721061891",
     "name": "\u0416\u0421\u041a \u00ab\u0416\u0434\u0430\u043d\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -533,7 +559,7 @@
   "model": "tenant.company",
   "pk": 23,
   "fields": {
-    "inn": 7720059970,
+    "inn": "7720059970",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u043c\u043f\u0430\u0441\u00bb",
     "ya_num": -1
   }
@@ -542,7 +568,7 @@
   "model": "tenant.company",
   "pk": 24,
   "fields": {
-    "inn": 7719062739,
+    "inn": "7719062739",
     "name": "\u0416\u0421\u041a \u00ab\u0426\u0435\u043b\u0438\u043d\u043e\u0433\u0440\u0430\u0434\u00bb",
     "ya_num": -1
   }
@@ -551,7 +577,7 @@
   "model": "tenant.company",
   "pk": 25,
   "fields": {
-    "inn": 7716109587,
+    "inn": "7716109587",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0438\u043b\u044c\u043c\u00bb",
     "ya_num": -1
   }
@@ -560,7 +586,7 @@
   "model": "tenant.company",
   "pk": 26,
   "fields": {
-    "inn": 7716063685,
+    "inn": "7716063685",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0438\u0440\u0438\u0442\u00bb",
     "ya_num": -1
   }
@@ -569,7 +595,7 @@
   "model": "tenant.company",
   "pk": 27,
   "fields": {
-    "inn": 7715069444,
+    "inn": "7715069444",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0438\u043c\u043d\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -578,7 +604,7 @@
   "model": "tenant.company",
   "pk": 28,
   "fields": {
-    "inn": 7714580504,
+    "inn": "7714580504",
     "name": "\u0422\u0421\u0416 \u00ab\u041d\u0410 \u0411\u041e\u041b\u042c\u0428\u041e\u041c \u041a\u041e\u041f\u0422\u0415\u0412\u0421\u041a\u041e\u041c\u00bb",
     "ya_num": -1
   }
@@ -587,7 +613,7 @@
   "model": "tenant.company",
   "pk": 29,
   "fields": {
-    "inn": 7713644226,
+    "inn": "7713644226",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u0414\u0415\u0417 \u0440\u0430\u0439\u043e\u043d\u0430 \u0414\u043c\u0438\u0442\u0440\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -596,7 +622,7 @@
   "model": "tenant.company",
   "pk": 30,
   "fields": {
-    "inn": 7710722780,
+    "inn": "7710722780",
     "name": "\u0422\u0421\u0416 \u00ab\u0422\u0432\u0435\u0440\u0441\u043a\u0430\u044f 19\u00bb",
     "ya_num": -1
   }
@@ -605,7 +631,7 @@
   "model": "tenant.company",
   "pk": 31,
   "fields": {
-    "inn": 7708600833,
+    "inn": "7708600833",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u00ab\u041a\u0440\u0430\u0441\u043d\u043e\u0435 \u0441\u0435\u043b\u043e\u00bb",
     "ya_num": -1
   }
@@ -614,7 +640,7 @@
   "model": "tenant.company",
   "pk": 32,
   "fields": {
-    "inn": 7705853265,
+    "inn": "7705853265",
     "name": "\u041e\u041e\u041e \u00ab\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0421\u0410\u0413\u0438\u041a\u00bb",
     "ya_num": -1
   }
@@ -623,7 +649,7 @@
   "model": "tenant.company",
   "pk": 33,
   "fields": {
-    "inn": 7704238242,
+    "inn": "7704238242",
     "name": "\u0422\u0421\u0416 \u00ab\u0420\u0435\u0442\u0440\u043e-35\u00bb",
     "ya_num": -1
   }
@@ -632,7 +658,7 @@
   "model": "tenant.company",
   "pk": 34,
   "fields": {
-    "inn": 7703052848,
+    "inn": "7703052848",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0438\u043c\u0435\u0442\u00bb",
     "ya_num": -1
   }
@@ -641,7 +667,7 @@
   "model": "tenant.company",
   "pk": 35,
   "fields": {
-    "inn": 7743063035,
+    "inn": "7743063035",
     "name": "\u0422\u0421\u0416 \u00ab\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0435 \u0448\u043e\u0441\u0441\u0435, 52\u0411\u00bb",
     "ya_num": -1
   }
@@ -650,7 +676,7 @@
   "model": "tenant.company",
   "pk": 36,
   "fields": {
-    "inn": 7736160944,
+    "inn": "7736160944",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0438\u0433\u0440\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -659,7 +685,7 @@
   "model": "tenant.company",
   "pk": 37,
   "fields": {
-    "inn": 7734003880,
+    "inn": "7734003880",
     "name": "\u041e\u041e\u041e \u00ab\u0418\u0412\u0410-XXI\u00bb",
     "ya_num": -1
   }
@@ -668,7 +694,7 @@
   "model": "tenant.company",
   "pk": 38,
   "fields": {
-    "inn": 7732084210,
+    "inn": "7732084210",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u043b\u043d\u0446\u0435\u0432\u043e-16\u00bb",
     "ya_num": -1
   }
@@ -677,7 +703,7 @@
   "model": "tenant.company",
   "pk": 39,
   "fields": {
-    "inn": 7731062862,
+    "inn": "7731062862",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0430\u0443\u0433\u0430\u0432\u0430\u00bb",
     "ya_num": -1
   }
@@ -686,7 +712,7 @@
   "model": "tenant.company",
   "pk": 40,
   "fields": {
-    "inn": 7729301104,
+    "inn": "7729301104",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u0435\u0439\u0442\u0440\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -695,7 +721,7 @@
   "model": "tenant.company",
   "pk": 41,
   "fields": {
-    "inn": 7728120592,
+    "inn": "7728120592",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0442\u0440\u043e\u0439\u043f\u043b\u0430\u0441\u0442\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -704,7 +730,7 @@
   "model": "tenant.company",
   "pk": 42,
   "fields": {
-    "inn": 7728090860,
+    "inn": "7728090860",
     "name": "\u0416\u0421\u041a \u00ab\u0428\u0430\u0439\u0431\u0430\u00bb",
     "ya_num": -1
   }
@@ -713,7 +739,7 @@
   "model": "tenant.company",
   "pk": 43,
   "fields": {
-    "inn": 7728035837,
+    "inn": "7728035837",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u0438\u043f\u0442\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -722,7 +748,7 @@
   "model": "tenant.company",
   "pk": 44,
   "fields": {
-    "inn": 7727071261,
+    "inn": "7727071261",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0418\u0420\u0413\u042d\u041c\u00bb",
     "ya_num": -1
   }
@@ -731,7 +757,7 @@
   "model": "tenant.company",
   "pk": 45,
   "fields": {
-    "inn": 7727021020,
+    "inn": "7727021020",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-23\u00bb",
     "ya_num": -1
   }
@@ -740,7 +766,7 @@
   "model": "tenant.company",
   "pk": 46,
   "fields": {
-    "inn": 7724180632,
+    "inn": "7724180632",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u043e\u0432\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -749,7 +775,7 @@
   "model": "tenant.company",
   "pk": 47,
   "fields": {
-    "inn": 7724176139,
+    "inn": "7724176139",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0410\u041a\u0423\u00bb",
     "ya_num": -1
   }
@@ -758,7 +784,7 @@
   "model": "tenant.company",
   "pk": 48,
   "fields": {
-    "inn": 7721029866,
+    "inn": "7721029866",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u044c\u0432\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -767,7 +793,7 @@
   "model": "tenant.company",
   "pk": 49,
   "fields": {
-    "inn": 7720059850,
+    "inn": "7720059850",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
     "ya_num": -1
   }
@@ -776,7 +802,7 @@
   "model": "tenant.company",
   "pk": 50,
   "fields": {
-    "inn": 7719048702,
+    "inn": "7719048702",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u0418\u0418\u041f\u0420\u041e\u0415\u041a\u0422\u00bb",
     "ya_num": -1
   }
@@ -785,7 +811,7 @@
   "model": "tenant.company",
   "pk": 51,
   "fields": {
-    "inn": 7719078055,
+    "inn": "7719078055",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0430\u044f \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -794,7 +820,7 @@
   "model": "tenant.company",
   "pk": 52,
   "fields": {
-    "inn": 7717011898,
+    "inn": "7717011898",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0438\u043c\u043d\u0435\u0444\u0442\u0435\u043c\u0430\u0448\u00bb",
     "ya_num": -1
   }
@@ -803,7 +829,7 @@
   "model": "tenant.company",
   "pk": 53,
   "fields": {
-    "inn": 7716086650,
+    "inn": "7716086650",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0430\u043b\u0438\u043e\u0442\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -812,7 +838,7 @@
   "model": "tenant.company",
   "pk": 54,
   "fields": {
-    "inn": 7715115965,
+    "inn": "7715115965",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0430\u0433\u0443\u043b\u044c\u043d\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -821,7 +847,7 @@
   "model": "tenant.company",
   "pk": 55,
   "fields": {
-    "inn": 7714711940,
+    "inn": "7714711940",
     "name": "\u041e\u041e\u041e \u00ab\u0410\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u0421\u0438\u0441\u0442\u0435\u043c\u044b \u041e\u043f\u0442\u0438\u043c\u0443\u043c\u00bb",
     "ya_num": -1
   }
@@ -830,7 +856,7 @@
   "model": "tenant.company",
   "pk": 56,
   "fields": {
-    "inn": 7713659600,
+    "inn": "7713659600",
     "name": "\u0422\u0421\u0416 \u00ab\u041a\u043b\u044f\u0437\u044c\u043c\u0438\u043d\u0441\u043a\u043e\u0435\u00bb",
     "ya_num": -1
   }
@@ -839,7 +865,7 @@
   "model": "tenant.company",
   "pk": 57,
   "fields": {
-    "inn": 7712036659,
+    "inn": "7712036659",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0435\u0442\u0435\u0440\u0430\u043d \u0442\u0440\u0443\u0434\u0430-\u0443\u0433\u043e\u043b\u044c\u0449\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -848,7 +874,7 @@
   "model": "tenant.company",
   "pk": 58,
   "fields": {
-    "inn": 7709093960,
+    "inn": "7709093960",
     "name": "\u0417\u0410\u041e\u00bb \u0416\u0438\u043b\u0438\u0449\u043d\u043e-\u044d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0435 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0435 \u00ab\u0418\u043c\u043f\u0443\u043b\u044c\u0441-\u0416\u0438\u043b\u0441\u0442\u0440\u043e\u0439\u00bb",
     "ya_num": -1
   }
@@ -857,7 +883,7 @@
   "model": "tenant.company",
   "pk": 59,
   "fields": {
-    "inn": 7707013825,
+    "inn": "7707013825",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0418\u0418\u0422\u00bb",
     "ya_num": -1
   }
@@ -866,7 +892,7 @@
   "model": "tenant.company",
   "pk": 60,
   "fields": {
-    "inn": 7704511149,
+    "inn": "7704511149",
     "name": "\u0422\u0421\u0416 \u00ab\u0421\u0442\u0430\u0440\u043e\u043f\u0435\u0442\u0440\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -875,7 +901,7 @@
   "model": "tenant.company",
   "pk": 61,
   "fields": {
-    "inn": 7703116876,
+    "inn": "7703116876",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u043b\u043e\u0434\u043e\u0439 \u043a\u0438\u043d\u0435\u043c\u0430\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u0441\u0442\u00bb",
     "ya_num": -1
   }
@@ -884,7 +910,7 @@
   "model": "tenant.company",
   "pk": 62,
   "fields": {
-    "inn": 7701327053,
+    "inn": "7701327053",
     "name": "\u0422\u0421\u0416 \u00ab\u041c\u044f\u0441\u043d\u0438\u0446\u043a\u0430\u044f 24\u00bb",
     "ya_num": -1
   }
@@ -893,7 +919,7 @@
   "model": "tenant.company",
   "pk": 63,
   "fields": {
-    "inn": 7743571818,
+    "inn": "7743571818",
     "name": "\u0422\u0421\u0416 \u00ab\u0424\u0435\u0441\u0442\u0438\u0432\u0430\u043b\u044c\u043d\u0430\u044f 24\u0410\u00bb",
     "ya_num": -1
   }
@@ -902,7 +928,7 @@
   "model": "tenant.company",
   "pk": 64,
   "fields": {
-    "inn": 7737023027,
+    "inn": "7737023027",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0445\u0430\u0440\u0430\u00bb",
     "ya_num": -1
   }
@@ -911,7 +937,7 @@
   "model": "tenant.company",
   "pk": 65,
   "fields": {
-    "inn": 7734060077,
+    "inn": "7734060077",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0434\u043b\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -920,7 +946,7 @@
   "model": "tenant.company",
   "pk": 66,
   "fields": {
-    "inn": 7733006655,
+    "inn": "7733006655",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-52\u041a\u00bb",
     "ya_num": -1
   }
@@ -929,7 +955,7 @@
   "model": "tenant.company",
   "pk": 67,
   "fields": {
-    "inn": 7731111534,
+    "inn": "7731111534",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0438\u0430\u043b\u044e\u043a\u0441\u00bb",
     "ya_num": -1
   }
@@ -938,7 +964,7 @@
   "model": "tenant.company",
   "pk": 68,
   "fields": {
-    "inn": 7729582409,
+    "inn": "7729582409",
     "name": "\u0417\u0410\u041e \u00ab\u0421\u0423-\u0416\u041a\u0425\u00bb",
     "ya_num": -1
   }
@@ -947,7 +973,7 @@
   "model": "tenant.company",
   "pk": 69,
   "fields": {
-    "inn": 7728125640,
+    "inn": "7728125640",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0440\u0443\u0436\u0431\u0430-18\u00bb",
     "ya_num": -1
   }
@@ -956,7 +982,7 @@
   "model": "tenant.company",
   "pk": 70,
   "fields": {
-    "inn": 7728091937,
+    "inn": "7728091937",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u044e\u0437-\u0410\u043f\u043e\u043b\u043b\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -965,7 +991,7 @@
   "model": "tenant.company",
   "pk": 71,
   "fields": {
-    "inn": 7728048096,
+    "inn": "7728048096",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-49\u041a\u00bb",
     "ya_num": -1
   }
@@ -974,7 +1000,7 @@
   "model": "tenant.company",
   "pk": 72,
   "fields": {
-    "inn": 7727093515,
+    "inn": "7727093515",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-21\u00bb",
     "ya_num": -1
   }
@@ -983,7 +1009,7 @@
   "model": "tenant.company",
   "pk": 73,
   "fields": {
-    "inn": 7727023966,
+    "inn": "7727023966",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-29 \u00ab",
     "ya_num": -1
   }
@@ -992,7 +1018,7 @@
   "model": "tenant.company",
   "pk": 74,
   "fields": {
-    "inn": 7725003788,
+    "inn": "7725003788",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u043b\u043e\u043c\u0435\u043d\u0441\u043a\u043e\u0435\u00bb",
     "ya_num": -1
   }
@@ -1001,7 +1027,7 @@
   "model": "tenant.company",
   "pk": 75,
   "fields": {
-    "inn": 7724180270,
+    "inn": "7724180270",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0431\u0430\u043a\u0430\u043d\u00bb",
     "ya_num": -1
   }
@@ -1010,7 +1036,7 @@
   "model": "tenant.company",
   "pk": 76,
   "fields": {
-    "inn": 7723147537,
+    "inn": "7723147537",
     "name": "\u041e\u041e\u041e \u00ab\u041f\u0422\u041e \u041f\u0415\u041a\u0410\u00bb",
     "ya_num": -1
   }
@@ -1019,7 +1045,7 @@
   "model": "tenant.company",
   "pk": 77,
   "fields": {
-    "inn": 7720060038,
+    "inn": "7720060038",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0440\u0438\u0432\u0435\u0442\u00bb",
     "ya_num": -1
   }
@@ -1028,7 +1054,7 @@
   "model": "tenant.company",
   "pk": 78,
   "fields": {
-    "inn": 7719077975,
+    "inn": "7719077975",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0430\u0431\u043e\u0442\u043d\u0438\u043a \u044d\u043d\u0446\u0438\u043a\u043b\u043e\u043f\u0435\u0434\u0438\u0438\u00bb",
     "ya_num": -1
   }
@@ -1037,7 +1063,7 @@
   "model": "tenant.company",
   "pk": 79,
   "fields": {
-    "inn": 7716112780,
+    "inn": "7716112780",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0430\u0433\u043e\u0440\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1046,7 +1072,7 @@
   "model": "tenant.company",
   "pk": 80,
   "fields": {
-    "inn": 7716078113,
+    "inn": "7716078113",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0443\u0434\u0438\u043d\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -1055,7 +1081,7 @@
   "model": "tenant.company",
   "pk": 81,
   "fields": {
-    "inn": 7715101850,
+    "inn": "7715101850",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0431\u0438\u043b\u0438\u0441\u0438\u00bb",
     "ya_num": -1
   }
@@ -1064,7 +1090,7 @@
   "model": "tenant.company",
   "pk": 82,
   "fields": {
-    "inn": 7714664031,
+    "inn": "7714664031",
     "name": "\u041e\u041e\u041e \u0423\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0414\u0438\u0440\u0435\u043a\u0446\u0438\u044f \u042d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u0438 \u0437\u0434\u0430\u043d\u0438\u0439 \u00ab\u0411\u0435\u0433\u043e\u0432\u0430\u044f\u00bb",
     "ya_num": -1
   }
@@ -1073,7 +1099,7 @@
   "model": "tenant.company",
   "pk": 83,
   "fields": {
-    "inn": 7713650325,
+    "inn": "7713650325",
     "name": "\u0422\u0421\u0416 \u00ab\u0414\u0443\u0431\u043d\u0438\u043d\u0441\u043a\u0430\u044f 71\u00bb",
     "ya_num": -1
   }
@@ -1082,7 +1108,7 @@
   "model": "tenant.company",
   "pk": 84,
   "fields": {
-    "inn": 7711051277,
+    "inn": "7711051277",
     "name": "\u0417\u0410\u041e \u00ab\u0410\u043b\u043d\u0438\u0442\u0430\u00bb",
     "ya_num": -1
   }
@@ -1091,7 +1117,7 @@
   "model": "tenant.company",
   "pk": 85,
   "fields": {
-    "inn": 7709032982,
+    "inn": "7709032982",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0443\u0434\u043e\u0436\u043d\u0438\u043a\u043e\u0432-\u0433\u0440\u0430\u0444\u0438\u043a\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -1100,7 +1126,7 @@
   "model": "tenant.company",
   "pk": 86,
   "fields": {
-    "inn": 7706205186,
+    "inn": "7706205186",
     "name": "\u0417\u0410\u041e \u00ab\u0421\u043b\u0443\u0436\u0431\u0430 \u0421\u0435\u0440\u0432\u0438\u0441\u0430 \u0412\u0430\u0448\u0435\u0433\u043e \u0414\u043e\u043c\u0430\u00bb",
     "ya_num": -1
   }
@@ -1109,7 +1135,7 @@
   "model": "tenant.company",
   "pk": 87,
   "fields": {
-    "inn": 7704508379,
+    "inn": "7704508379",
     "name": "\u0422\u0421\u0416 \u00ab\u0410\u0440\u0431\u0430\u0442 23\u00bb",
     "ya_num": -1
   }
@@ -1118,7 +1144,7 @@
   "model": "tenant.company",
   "pk": 88,
   "fields": {
-    "inn": 7703116844,
+    "inn": "7703116844",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0430\u043b\u044b\u0439 \u0442\u0435\u0430\u0442\u0440\u00bb",
     "ya_num": -1
   }
@@ -1127,7 +1153,7 @@
   "model": "tenant.company",
   "pk": 89,
   "fields": {
-    "inn": 7701261892,
+    "inn": "7701261892",
     "name": "\u0422\u0421\u0416 \u00ab\u0425\u0430\u0440\u0438\u0442\u043e\u043d\u044c\u0435\u00bb",
     "ya_num": -1
   }
@@ -1136,7 +1162,7 @@
   "model": "tenant.company",
   "pk": 90,
   "fields": {
-    "inn": 7743087318,
+    "inn": "7743087318",
     "name": "\u0422\u0421\u0416 \u00ab\u0414\u0435\u0433\u0443\u043d\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -1145,7 +1171,7 @@
   "model": "tenant.company",
   "pk": 91,
   "fields": {
-    "inn": 7737019510,
+    "inn": "7737019510",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0430\u0439\u043d\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -1154,7 +1180,7 @@
   "model": "tenant.company",
   "pk": 92,
   "fields": {
-    "inn": 7734060020,
+    "inn": "7734060020",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u043e\u0434\u043e\u043f\u0430\u0434\u00bb",
     "ya_num": -1
   }
@@ -1163,7 +1189,7 @@
   "model": "tenant.company",
   "pk": 93,
   "fields": {
-    "inn": 7733002812,
+    "inn": "7733002812",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-17\u00bb",
     "ya_num": -1
   }
@@ -1172,7 +1198,7 @@
   "model": "tenant.company",
   "pk": 94,
   "fields": {
-    "inn": 7731109990,
+    "inn": "7731109990",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u0430\u0440\u0430\u00bb",
     "ya_num": -1
   }
@@ -1181,7 +1207,7 @@
   "model": "tenant.company",
   "pk": 95,
   "fields": {
-    "inn": 7729524407,
+    "inn": "7729524407",
     "name": "\u041e\u041e\u041e \u00ab\u042e\u043d\u0438\u0441\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -1190,7 +1216,7 @@
   "model": "tenant.company",
   "pk": 96,
   "fields": {
-    "inn": 7728124460,
+    "inn": "7728124460",
     "name": "\u0416\u0421\u041a \u00ab\u0423\u043c\u0435\u0440\u0435\u043d\u043d\u044b\u0439\u00bb",
     "ya_num": -1
   }
@@ -1199,7 +1225,7 @@
   "model": "tenant.company",
   "pk": 97,
   "fields": {
-    "inn": 7728091711,
+    "inn": "7728091711",
     "name": "\u0416\u0421\u041a \u00ab\u0428\u0438\u0440\u043e\u0442\u0430\u00bb",
     "ya_num": -1
   }
@@ -1208,7 +1234,7 @@
   "model": "tenant.company",
   "pk": 98,
   "fields": {
-    "inn": 7728043098,
+    "inn": "7728043098",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0443\u0440\u044c\u0435\u0432\u00bb",
     "ya_num": -1
   }
@@ -1217,7 +1243,7 @@
   "model": "tenant.company",
   "pk": 99,
   "fields": {
-    "inn": 7727086758,
+    "inn": "7727086758",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-25\u00bb",
     "ya_num": -1
   }
@@ -1226,7 +1252,7 @@
   "model": "tenant.company",
   "pk": 100,
   "fields": {
-    "inn": 7727021983,
+    "inn": "7727021983",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-36\u041a\u00bb",
     "ya_num": -1
   }
@@ -1235,7 +1261,7 @@
   "model": "tenant.company",
   "pk": 101,
   "fields": {
-    "inn": 7719597396,
+    "inn": "7719597396",
     "name": "\u041e\u0410\u041e \u00ab\u0420\u042d\u0423 56 \u0440\u0430\u0439\u043e\u043d\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439\u00bb",
     "ya_num": -1
   }
@@ -1244,7 +1270,7 @@
   "model": "tenant.company",
   "pk": 102,
   "fields": {
-    "inn": 7718019152,
+    "inn": "7718019152",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0435\u043b\u0435\u043d\u044b\u0439 \u043b\u0443\u0447\u00bb",
     "ya_num": -1
   }
@@ -1253,7 +1279,7 @@
   "model": "tenant.company",
   "pk": 103,
   "fields": {
-    "inn": 7716090248,
+    "inn": "7716090248",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-26\u00bb",
     "ya_num": -1
   }
@@ -1262,7 +1288,7 @@
   "model": "tenant.company",
   "pk": 104,
   "fields": {
-    "inn": 7715158630,
+    "inn": "7715158630",
     "name": "\u041d\u041e \u0422\u0421\u0416 \u00ab\u0428\u0410\u041d\u0421\u00bb",
     "ya_num": -1
   }
@@ -1271,7 +1297,7 @@
   "model": "tenant.company",
   "pk": 105,
   "fields": {
-    "inn": 7715040854,
+    "inn": "7715040854",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u043e\u0441\u0441\u0438\u044f\u043d\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -1280,7 +1306,7 @@
   "model": "tenant.company",
   "pk": 106,
   "fields": {
-    "inn": 7714038563,
+    "inn": "7714038563",
     "name": "\u041e\u041e\u041e \u00ab\u0421\u043e\u043a\u043e \u041c\u041f\u0425\u00bb",
     "ya_num": -1
   }
@@ -1289,7 +1315,7 @@
   "model": "tenant.company",
   "pk": 107,
   "fields": {
-    "inn": 7712097683,
+    "inn": "7712097683",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0443\u0441\u0430\u043b\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -1298,7 +1324,7 @@
   "model": "tenant.company",
   "pk": 108,
   "fields": {
-    "inn": 7709859290,
+    "inn": "7709859290",
     "name": "\u0417\u0410\u041e \u0423\u041a \u00ab\u041a\u0430\u043f\u0438\u0442\u0430\u043b-\u0418\u043d\u0432\u0435\u0441\u0442 \u042e\u0433\u00bb",
     "ya_num": -1
   }
@@ -1307,7 +1333,7 @@
   "model": "tenant.company",
   "pk": 109,
   "fields": {
-    "inn": 7707107696,
+    "inn": "7707107696",
     "name": "\u0414\u041e\u0421\u0420 \u041c\u0416\u041a \u00ab\u0418\u043a\u0430\u0440\u00bb",
     "ya_num": -1
   }
@@ -1316,7 +1342,7 @@
   "model": "tenant.company",
   "pk": 110,
   "fields": {
-    "inn": 7705012696,
+    "inn": "7705012696",
     "name": "\u0413\u0423\u041f \u00ab\u0414\u0415\u0417 \u0440\u0430\u0439\u043e\u043d\u0430 \u0417\u0430\u043c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435\u00bb",
     "ya_num": -1
   }
@@ -1325,7 +1351,7 @@
   "model": "tenant.company",
   "pk": 111,
   "fields": {
-    "inn": 7703546734,
+    "inn": "7703546734",
     "name": "\u0422\u0421\u0416 \u00ab\u0421\u043a\u0430\u0442\u0435\u0440\u0442\u043d\u044b\u0439 15\u00bb",
     "ya_num": -1
   }
@@ -1334,7 +1360,7 @@
   "model": "tenant.company",
   "pk": 112,
   "fields": {
-    "inn": 7703001201,
+    "inn": "7703001201",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0438\u0434\u0440\u043e\u0441\u0442\u0430\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -1343,7 +1369,7 @@
   "model": "tenant.company",
   "pk": 113,
   "fields": {
-    "inn": 7737056625,
+    "inn": "7737056625",
     "name": "\u0416\u0421\u041a \u00ab\u042f\u0445\u043e\u043d\u0442\u00bb",
     "ya_num": -1
   }
@@ -1352,7 +1378,7 @@
   "model": "tenant.company",
   "pk": 114,
   "fields": {
-    "inn": 7734637974,
+    "inn": "7734637974",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u0420\u0415\u0421\u0423\u0420\u0421\u042d\u041d\u0415\u0420\u0413\u041e\u041f\u0420\u041e\u041c\u00bb",
     "ya_num": -1
   }
@@ -1361,7 +1387,7 @@
   "model": "tenant.company",
   "pk": 115,
   "fields": {
-    "inn": 7733052080,
+    "inn": "7733052080",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-16\u00bb",
     "ya_num": -1
   }
@@ -1370,7 +1396,7 @@
   "model": "tenant.company",
   "pk": 116,
   "fields": {
-    "inn": 7731147234,
+    "inn": "7731147234",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u043d\u0435\u0441\u0442\u0440\u00bb",
     "ya_num": -1
   }
@@ -1379,7 +1405,7 @@
   "model": "tenant.company",
   "pk": 117,
   "fields": {
-    "inn": 7730688625,
+    "inn": "7730688625",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u0414\u043e\u0440\u043e\u0433\u043e\u043c\u0438\u043b\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -1388,7 +1414,7 @@
   "model": "tenant.company",
   "pk": 118,
   "fields": {
-    "inn": 7728130960,
+    "inn": "7728130960",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0435\u043f\u043b\u043e\u0441\u0442\u0430\u043d\u0435\u0446\u00bb",
     "ya_num": -1
   }
@@ -1397,7 +1423,7 @@
   "model": "tenant.company",
   "pk": 119,
   "fields": {
-    "inn": 7728105160,
+    "inn": "7728105160",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0430\u0440\u0430\u0439\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1406,7 +1432,7 @@
   "model": "tenant.company",
   "pk": 120,
   "fields": {
-    "inn": 7728080967,
+    "inn": "7728080967",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0435\u0440\u043c\u0435\u0437\u00bb",
     "ya_num": -1
   }
@@ -1415,7 +1441,7 @@
   "model": "tenant.company",
   "pk": 121,
   "fields": {
-    "inn": 7728007244,
+    "inn": "7728007244",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u043e\u0441\u0444\u043e\u0440\u00bb",
     "ya_num": -1
   }
@@ -1424,7 +1450,7 @@
   "model": "tenant.company",
   "pk": 122,
   "fields": {
-    "inn": 7727038000,
+    "inn": "7727038000",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-24\u00bb",
     "ya_num": -1
   }
@@ -1433,7 +1459,7 @@
   "model": "tenant.company",
   "pk": 123,
   "fields": {
-    "inn": 7726200700,
+    "inn": "7726200700",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0438\u043d\u0437\u0430\u00bb",
     "ya_num": -1
   }
@@ -1442,7 +1468,7 @@
   "model": "tenant.company",
   "pk": 124,
   "fields": {
-    "inn": 7724180488,
+    "inn": "7724180488",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u041e\u0421\u041a\u0412\u041e\u0420\u0415\u0427\u042c\u0415-12\u00bb",
     "ya_num": -1
   }
@@ -1451,7 +1477,7 @@
   "model": "tenant.company",
   "pk": 125,
   "fields": {
-    "inn": 7724156990,
+    "inn": "7724156990",
     "name": "\u0416\u0421\u041a \u00ab\u0415\u043b\u0435\u0446\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -1460,7 +1486,7 @@
   "model": "tenant.company",
   "pk": 126,
   "fields": {
-    "inn": 7720079208,
+    "inn": "7720079208",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0442\u0430\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -1469,7 +1495,7 @@
   "model": "tenant.company",
   "pk": 127,
   "fields": {
-    "inn": 7719585390,
+    "inn": "7719585390",
     "name": "\u041e\u0410\u041e \u00ab\u0420\u042d\u0423 18 \u0440\u0430\u0439\u043e\u043d\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u043e\u0435 \u0418\u0437\u043c\u0430\u0439\u043b\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -1478,7 +1504,7 @@
   "model": "tenant.company",
   "pk": 128,
   "fields": {
-    "inn": 7718019106,
+    "inn": "7718019106",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0440\u043e\u043c\u0430\u0442\u0440\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -1487,7 +1513,7 @@
   "model": "tenant.company",
   "pk": 129,
   "fields": {
-    "inn": 7716086717,
+    "inn": "7716086717",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u043e\u0437\u043e\u0440\u043d\u044b\u0439\u00bb",
     "ya_num": -1
   }
@@ -1496,7 +1522,7 @@
   "model": "tenant.company",
   "pk": 130,
   "fields": {
-    "inn": 7715139050,
+    "inn": "7715139050",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0438\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -1505,7 +1531,7 @@
   "model": "tenant.company",
   "pk": 131,
   "fields": {
-    "inn": 7715040646,
+    "inn": "7715040646",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0438\u0442\u0435\u0431\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1514,7 +1540,7 @@
   "model": "tenant.company",
   "pk": 132,
   "fields": {
-    "inn": 7714032201,
+    "inn": "7714032201",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -1523,7 +1549,7 @@
   "model": "tenant.company",
   "pk": 133,
   "fields": {
-    "inn": 7712090536,
+    "inn": "7712090536",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0431\u0435\u0440\u0442\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -1532,7 +1558,7 @@
   "model": "tenant.company",
   "pk": 134,
   "fields": {
-    "inn": 7709677476,
+    "inn": "7709677476",
     "name": "\u0422\u0421\u0416 \u00ab\u0412\u043e\u0440\u043e\u043d\u0446\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -1541,7 +1567,7 @@
   "model": "tenant.company",
   "pk": 135,
   "fields": {
-    "inn": 7707094567,
+    "inn": "7707094567",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0430\u043b\u043b\u0430\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -1550,7 +1576,7 @@
   "model": "tenant.company",
   "pk": 136,
   "fields": {
-    "inn": 7704738943,
+    "inn": "7704738943",
     "name": "\u041e\u041e\u041e \u00ab\u0414\u0438\u0440\u0435\u043a\u0446\u0438\u044f \u0435\u0434\u0438\u043d\u043e\u0433\u043e \u0437\u0430\u043a\u0430\u0437\u0447\u0438\u043a\u0430 \u0440\u0430\u0439\u043e\u043d\u0430 \u0410\u0440\u0431\u0430\u0442\u00bb",
     "ya_num": -1
   }
@@ -1559,7 +1585,7 @@
   "model": "tenant.company",
   "pk": 137,
   "fields": {
-    "inn": 7703538701,
+    "inn": "7703538701",
     "name": "\u0422\u0421\u0416 \u00ab\u041f\u0440\u0435\u0434\u0442\u0435\u0447\u0435\u043d\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -1568,7 +1594,7 @@
   "model": "tenant.company",
   "pk": 138,
   "fields": {
-    "inn": 7702504643,
+    "inn": "7702504643",
     "name": "\u0422\u0421\u0416 \u00ab\u041f\u0435\u0447\u0430\u0442\u043d\u0438\u043a\u043e\u0432-16\u00bb",
     "ya_num": -1
   }
@@ -1577,7 +1603,7 @@
   "model": "tenant.company",
   "pk": 139,
   "fields": {
-    "inn": 7737055484,
+    "inn": "7737055484",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043b\u0430\u0442\u0438\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -1586,7 +1612,7 @@
   "model": "tenant.company",
   "pk": 140,
   "fields": {
-    "inn": 7734120311,
+    "inn": "7734120311",
     "name": "\u0416\u0421\u041a \u00ab\u042f\u0434\u0440\u043e\u00bb",
     "ya_num": -1
   }
@@ -1595,7 +1621,7 @@
   "model": "tenant.company",
   "pk": 141,
   "fields": {
-    "inn": 7733048077,
+    "inn": "7733048077",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-12\u00bb",
     "ya_num": -1
   }
@@ -1604,7 +1630,7 @@
   "model": "tenant.company",
   "pk": 142,
   "fields": {
-    "inn": 7731147202,
+    "inn": "7731147202",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0443\u0431\u043b\u0435\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -1613,7 +1639,7 @@
   "model": "tenant.company",
   "pk": 143,
   "fields": {
-    "inn": 7730124869,
+    "inn": "7730124869",
     "name": "\u041e\u041e\u041e \u00ab3\u0441\u043c\u00bb",
     "ya_num": -1
   }
@@ -1622,7 +1648,7 @@
   "model": "tenant.company",
   "pk": 144,
   "fields": {
-    "inn": 7728129362,
+    "inn": "7728129362",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0430\u0440\u0431\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -1631,7 +1657,7 @@
   "model": "tenant.company",
   "pk": 145,
   "fields": {
-    "inn": 7728099090,
+    "inn": "7728099090",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043b\u0451\u0441\u00bb",
     "ya_num": -1
   }
@@ -1640,7 +1666,7 @@
   "model": "tenant.company",
   "pk": 146,
   "fields": {
-    "inn": 7728074963,
+    "inn": "7728074963",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043e\u0440\u043e\u0434\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -1649,7 +1675,7 @@
   "model": "tenant.company",
   "pk": 147,
   "fields": {
-    "inn": 7728000344,
+    "inn": "7728000344",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-18\u00bb",
     "ya_num": -1
   }
@@ -1658,7 +1684,7 @@
   "model": "tenant.company",
   "pk": 148,
   "fields": {
-    "inn": 7727036122,
+    "inn": "7727036122",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-14\u00bb",
     "ya_num": -1
   }
@@ -1667,7 +1693,7 @@
   "model": "tenant.company",
   "pk": 149,
   "fields": {
-    "inn": 7726191990,
+    "inn": "7726191990",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u0435\u0439\u0441\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -1676,7 +1702,7 @@
   "model": "tenant.company",
   "pk": 150,
   "fields": {
-    "inn": 7724180424,
+    "inn": "7724180424",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-10\u00bb",
     "ya_num": -1
   }
@@ -1685,7 +1711,7 @@
   "model": "tenant.company",
   "pk": 151,
   "fields": {
-    "inn": 7726191990,
+    "inn": "7726191990",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u0435\u0439\u0441\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -1694,7 +1720,7 @@
   "model": "tenant.company",
   "pk": 152,
   "fields": {
-    "inn": 7724180424,
+    "inn": "7724180424",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-10\u00bb",
     "ya_num": -1
   }
@@ -1703,7 +1729,7 @@
   "model": "tenant.company",
   "pk": 153,
   "fields": {
-    "inn": 7724156982,
+    "inn": "7724156982",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u0433\u0434\u0438\u0430\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -1712,7 +1738,7 @@
   "model": "tenant.company",
   "pk": 154,
   "fields": {
-    "inn": 7720079110,
+    "inn": "7720079110",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0440\u0430\u0442\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1721,7 +1747,7 @@
   "model": "tenant.company",
   "pk": 155,
   "fields": {
-    "inn": 7719577329,
+    "inn": "7719577329",
     "name": "\u041e\u0410\u041e \u00ab\u0420\u042d\u0423 21 \u0440\u0430\u0439\u043e\u043d\u0430 \u0418\u0437\u043c\u0430\u0439\u043b\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -1730,7 +1756,7 @@
   "model": "tenant.company",
   "pk": 156,
   "fields": {
-    "inn": 7718019096,
+    "inn": "7718019096",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0435\u0441\u043d\u043e\u0435 \u044d\u0445\u043e\u00bb",
     "ya_num": -1
   }
@@ -1739,7 +1765,7 @@
   "model": "tenant.company",
   "pk": 157,
   "fields": {
-    "inn": 7716086700,
+    "inn": "7716086700",
     "name": "\u0416\u041a \u00ab\u0421\u0442\u0430\u0440\u0442\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -1748,7 +1774,7 @@
   "model": "tenant.company",
   "pk": 158,
   "fields": {
-    "inn": 7715137091,
+    "inn": "7715137091",
     "name": "\u0416\u0421\u041a \u00ab\u0428\u0435\u0440\u0435\u043c\u0435\u0442\u044c\u0435\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -1757,7 +1783,7 @@
   "model": "tenant.company",
   "pk": 159,
   "fields": {
-    "inn": 7715010095,
+    "inn": "7715010095",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0435\u0441\u043a\u0443\u0434\u043d\u0438\u043a\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -1766,7 +1792,7 @@
   "model": "tenant.company",
   "pk": 160,
   "fields": {
-    "inn": 7714031663,
+    "inn": "7714031663",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439 \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -1775,7 +1801,7 @@
   "model": "tenant.company",
   "pk": 161,
   "fields": {
-    "inn": 7712083899,
+    "inn": "7712083899",
     "name": "\u0416\u0421\u041a \u00ab\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0442\u0438\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -1784,7 +1810,7 @@
   "model": "tenant.company",
   "pk": 162,
   "fields": {
-    "inn": 7709645918,
+    "inn": "7709645918",
     "name": "\u041d\u041f \u00ab\u0421\u0421\u0416 \u0424\u0430\u043a\u0435\u043b\u00bb",
     "ya_num": -1
   }
@@ -1793,7 +1819,7 @@
   "model": "tenant.company",
   "pk": 163,
   "fields": {
-    "inn": 7707093612,
+    "inn": "7707093612",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0440\u0442\u0438\u0441\u0442 \u044d\u0441\u0442\u0440\u0430\u0434\u044b\u00bb",
     "ya_num": -1
   }
@@ -1802,7 +1828,7 @@
   "model": "tenant.company",
   "pk": 164,
   "fields": {
-    "inn": 7704609200,
+    "inn": "7704609200",
     "name": "\u0422\u0421\u0416 \u00ab\u0414\u043e\u043c \u043d\u0430 \u041f\u043e\u0432\u0430\u0440\u0441\u043a\u043e\u0439\u00bb",
     "ya_num": -1
   }
@@ -1811,7 +1837,7 @@
   "model": "tenant.company",
   "pk": 165,
   "fields": {
-    "inn": 7703392499,
+    "inn": "7703392499",
     "name": "\u0422\u0421\u0416 \u00ab\u0422\u0435\u0440\u0435\u043c\u043e\u043a \u043d\u0430 \u041f\u0440\u0435\u0441\u043d\u0435\u00bb",
     "ya_num": -1
   }
@@ -1820,7 +1846,7 @@
   "model": "tenant.company",
   "pk": 166,
   "fields": {
-    "inn": 7702125638,
+    "inn": "7702125638",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0435\u0440\u0435\u0437\u0430\u00bb",
     "ya_num": -1
   }
@@ -1829,7 +1855,7 @@
   "model": "tenant.company",
   "pk": 167,
   "fields": {
-    "inn": 7737054882,
+    "inn": "7737054882",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043e\u0438\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1838,7 +1864,7 @@
   "model": "tenant.company",
   "pk": 168,
   "fields": {
-    "inn": 7734098592,
+    "inn": "7734098592",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u043e\u0432\u043e\u0433\u043e\u0440\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1847,7 +1873,7 @@
   "model": "tenant.company",
   "pk": 169,
   "fields": {
-    "inn": 7733031549,
+    "inn": "7733031549",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0430\u043a\u0443\u0440\u0441\u00bb",
     "ya_num": -1
   }
@@ -1856,7 +1882,7 @@
   "model": "tenant.company",
   "pk": 170,
   "fields": {
-    "inn": 7731147178,
+    "inn": "7731147178",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u044b\u043d\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -1865,7 +1891,7 @@
   "model": "tenant.company",
   "pk": 171,
   "fields": {
-    "inn": 7730047565,
+    "inn": "7730047565",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u043e\u043c\u0430 \u0423\u0447\u0435\u043d\u044b\u0445\u00bb",
     "ya_num": -1
   }
@@ -1874,7 +1900,7 @@
   "model": "tenant.company",
   "pk": 172,
   "fields": {
-    "inn": 7728127911,
+    "inn": "7728127911",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u043b\u0438\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -1883,7 +1909,7 @@
   "model": "tenant.company",
   "pk": 173,
   "fields": {
-    "inn": 7728098192,
+    "inn": "7728098192",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0435\u043e\u0441\u0442\u0440\u043e\u043c\u00bb",
     "ya_num": -1
   }
@@ -1892,7 +1918,7 @@
   "model": "tenant.company",
   "pk": 174,
   "fields": {
-    "inn": 7728073198,
+    "inn": "7728073198",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0435\u0434\u0446\u0432\u0435\u0442\u043c\u0435\u0442\u00bb",
     "ya_num": -1
   }
@@ -1901,7 +1927,7 @@
   "model": "tenant.company",
   "pk": 175,
   "fields": {
-    "inn": 7727651270,
+    "inn": "7727651270",
     "name": "\u0417\u0410\u041e \u0423\u041a \u00ab\u0418\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0421\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -1910,7 +1936,7 @@
   "model": "tenant.company",
   "pk": 176,
   "fields": {
-    "inn": 7727029622,
+    "inn": "7727029622",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-22\u00bb",
     "ya_num": -1
   }
@@ -1919,7 +1945,7 @@
   "model": "tenant.company",
   "pk": 177,
   "fields": {
-    "inn": 7726086280,
+    "inn": "7726086280",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0438\u0440\u043e\u0432\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -1928,7 +1954,7 @@
   "model": "tenant.company",
   "pk": 178,
   "fields": {
-    "inn": 7724180382,
+    "inn": "7724180382",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0438\u043d\u043a\u043e\u0440\u00bb",
     "ya_num": -1
   }
@@ -1937,7 +1963,7 @@
   "model": "tenant.company",
   "pk": 179,
   "fields": {
-    "inn": 7724156975,
+    "inn": "7724156975",
     "name": "\u0416\u0421\u041a \u00ab\u0416\u0443\u0440\u0430\u0432\u0443\u0448\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -1946,7 +1972,7 @@
   "model": "tenant.company",
   "pk": 180,
   "fields": {
-    "inn": 7720060126,
+    "inn": "7720060126",
     "name": "\u0416\u0421\u041a \u00ab\u042e\u043d\u043e\u0441\u0442\u044c \u042d\u0441\u0442\u0440\u0430\u0434\u044b\u00bb",
     "ya_num": -1
   }
@@ -1955,7 +1981,7 @@
   "model": "tenant.company",
   "pk": 181,
   "fields": {
-    "inn": 7719568652,
+    "inn": "7719568652",
     "name": "\u041e\u0410\u041e \u00ab\u041c\u0420\u0421\u0423 \u0412\u0410\u041e\u00bb",
     "ya_num": -1
   }
@@ -1964,7 +1990,7 @@
   "model": "tenant.company",
   "pk": 182,
   "fields": {
-    "inn": 7717080059,
+    "inn": "7717080059",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u043e\u043d\u0446\u0435\u0440\u0442\u00bb",
     "ya_num": -1
   }
@@ -1973,7 +1999,7 @@
   "model": "tenant.company",
   "pk": 183,
   "fields": {
-    "inn": 7716086690,
+    "inn": "7716086690",
     "name": "\u0416\u0421\u041a \u00ab\u042f\u0440\u043e\u0441\u043b\u0430\u0432\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -1982,7 +2008,7 @@
   "model": "tenant.company",
   "pk": 184,
   "fields": {
-    "inn": 7715136475,
+    "inn": "7715136475",
     "name": "\u0416\u0421\u041a \u00ab\u0418\u0436\u0435\u0432\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -1991,7 +2017,7 @@
   "model": "tenant.company",
   "pk": 185,
   "fields": {
-    "inn": 7714816100,
+    "inn": "7714816100",
     "name": "\u041e\u041e\u041e \u0414\u042d\u0417 \u00ab\u0421\u0430\u0432\u0435\u043b\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2000,7 +2026,7 @@
   "model": "tenant.company",
   "pk": 186,
   "fields": {
-    "inn": 7714031430,
+    "inn": "7714031430",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u043b\u043b\u0435\u043a\u0442\u0438\u0432\u043d\u044b\u0439 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -2009,7 +2035,7 @@
   "model": "tenant.company",
   "pk": 187,
   "fields": {
-    "inn": 7712074686,
+    "inn": "7712074686",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0440\u043e\u043c\u0441\u0442\u0440\u043e\u0439\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b\u00bb",
     "ya_num": -1
   }
@@ -2018,7 +2044,7 @@
   "model": "tenant.company",
   "pk": 188,
   "fields": {
-    "inn": 7709275600,
+    "inn": "7709275600",
     "name": "\u0416\u0421\u041a \u0432\u043e\u0435\u043d\u043d\u043e\u0441\u043b\u0443\u0436\u0430\u0449\u0438\u0445 \u00ab\u0412\u0435\u0442\u0435\u0440\u0430\u043d\u00bb",
     "ya_num": -1
   }
@@ -2027,7 +2053,7 @@
   "model": "tenant.company",
   "pk": 189,
   "fields": {
-    "inn": 7707084400,
+    "inn": "7707084400",
     "name": "\u0416\u0421\u041a \u0410\u0420\u0422\u0418\u0421\u0422\u041e\u0412 \u0411\u0410\u041b\u0415\u0422\u0410 \u0411\u041e\u041b\u042c\u0428\u041e\u0413\u041e \u0422\u0415\u0410\u0422\u0420\u0410 \u0421\u041e\u042e\u0417\u0410 \u0421\u0421\u0420",
     "ya_num": -1
   }
@@ -2036,7 +2062,7 @@
   "model": "tenant.company",
   "pk": 190,
   "fields": {
-    "inn": 7704550596,
+    "inn": "7704550596",
     "name": "\u0422\u0421\u0416 \u00ab\u041a\u0440\u043e\u043f\u043e\u0442\u043a\u0438\u043d\u0441\u043a\u043e\u0435\u00bb",
     "ya_num": -1
   }
@@ -2045,7 +2071,7 @@
   "model": "tenant.company",
   "pk": 191,
   "fields": {
-    "inn": 7703127155,
+    "inn": "7703127155",
     "name": "\u0416\u0438\u043b\u0442\u043e\u0432\u0430\u0440\u0438\u0449\u0435\u0441\u0442\u0432\u043e \u00ab\u042d\u0439\u0434\u0435\u0442\u0438\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -2054,7 +2080,7 @@
   "model": "tenant.company",
   "pk": 192,
   "fields": {
-    "inn": 7702125500,
+    "inn": "7702125500",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0440\u043e\u043d\u0438\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -2063,7 +2089,7 @@
   "model": "tenant.company",
   "pk": 193,
   "fields": {
-    "inn": 7743682331,
+    "inn": "7743682331",
     "name": "\u0422\u0421\u0416 \u00ab\u0412\u0410\u0421\u041f 13\u00bb",
     "ya_num": -1
   }
@@ -2072,7 +2098,7 @@
   "model": "tenant.company",
   "pk": 194,
   "fields": {
-    "inn": 7737054868,
+    "inn": "7737054868",
     "name": "\u0416\u0421\u041a \u00ab\u042e\u0433\u043e-\u0412\u043e\u0441\u0442\u043e\u043a\u00bb",
     "ya_num": -1
   }
@@ -2081,7 +2107,7 @@
   "model": "tenant.company",
   "pk": 195,
   "fields": {
-    "inn": 7734097422,
+    "inn": "7734097422",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u00bb",
     "ya_num": -1
   }
@@ -2090,7 +2116,7 @@
   "model": "tenant.company",
   "pk": 196,
   "fields": {
-    "inn": 7733023570,
+    "inn": "7733023570",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-15\u00bb",
     "ya_num": -1
   }
@@ -2099,7 +2125,7 @@
   "model": "tenant.company",
   "pk": 197,
   "fields": {
-    "inn": 7731126266,
+    "inn": "7731126266",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0438\u043b\u0435\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2108,7 +2134,7 @@
   "model": "tenant.company",
   "pk": 198,
   "fields": {
-    "inn": 7730010170,
+    "inn": "7730010170",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0435\u0440\u0435\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -2117,7 +2143,7 @@
   "model": "tenant.company",
   "pk": 199,
   "fields": {
-    "inn": 7728126932,
+    "inn": "7728126932",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0440\u0444\u0435\u0439\u00bb",
     "ya_num": -1
   }
@@ -2126,7 +2152,7 @@
   "model": "tenant.company",
   "pk": 200,
   "fields": {
-    "inn": 7728097576,
+    "inn": "7728097576",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0430\u043c\u0430\u043d\u044c\u00bb",
     "ya_num": -1
   }
@@ -2135,7 +2161,7 @@
   "model": "tenant.company",
   "pk": 201,
   "fields": {
-    "inn": 7728073141,
+    "inn": "7728073141",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0443\u0440\u0431\u043e\u0431\u0443\u0440\u00bb",
     "ya_num": -1
   }
@@ -2144,7 +2170,7 @@
   "model": "tenant.company",
   "pk": 202,
   "fields": {
-    "inn": 7727121339,
+    "inn": "7727121339",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-21\u00bb",
     "ya_num": -1
   }
@@ -2153,7 +2179,7 @@
   "model": "tenant.company",
   "pk": 203,
   "fields": {
-    "inn": 7727029573,
+    "inn": "7727029573",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-44\u041a\u00bb",
     "ya_num": -1
   }
@@ -2162,7 +2188,7 @@
   "model": "tenant.company",
   "pk": 204,
   "fields": {
-    "inn": 7726079388,
+    "inn": "7726079388",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d\u00bb",
     "ya_num": -1
   }
@@ -2171,7 +2197,7 @@
   "model": "tenant.company",
   "pk": 205,
   "fields": {
-    "inn": 7724180350,
+    "inn": "7724180350",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0430\u0434\u043e\u043d\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2180,7 +2206,7 @@
   "model": "tenant.company",
   "pk": 206,
   "fields": {
-    "inn": 7723895250,
+    "inn": "7723895250",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u041f\u0435\u0447\u0430\u0442\u043d\u0438\u043a\u0438\u00bb",
     "ya_num": -1
   }
@@ -2189,7 +2215,7 @@
   "model": "tenant.company",
   "pk": 207,
   "fields": {
-    "inn": 7720060084,
+    "inn": "7720060084",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0440\u0435\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -2198,7 +2224,7 @@
   "model": "tenant.company",
   "pk": 208,
   "fields": {
-    "inn": 7719114850,
+    "inn": "7719114850",
     "name": "\u0416\u0421\u041a \u00ab\u0423\u0424\u0410\u00bb",
     "ya_num": -1
   }
@@ -2207,7 +2233,7 @@
   "model": "tenant.company",
   "pk": 209,
   "fields": {
-    "inn": 7717043586,
+    "inn": "7717043586",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0434\u043e\u0440\u043e\u0432\u044c\u0435-74\u00bb",
     "ya_num": -1
   }
@@ -2216,7 +2242,7 @@
   "model": "tenant.company",
   "pk": 210,
   "fields": {
-    "inn": 7716086682,
+    "inn": "7716086682",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0417\u041f\u0418\u00bb",
     "ya_num": -1
   }
@@ -2225,7 +2251,7 @@
   "model": "tenant.company",
   "pk": 211,
   "fields": {
-    "inn": 7715135288,
+    "inn": "7715135288",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u043b\u0430\u0434\u0438\u043e\u043b\u0443\u0441\u00bb",
     "ya_num": -1
   }
@@ -2234,7 +2260,7 @@
   "model": "tenant.company",
   "pk": 212,
   "fields": {
-    "inn": 7714776970,
+    "inn": "7714776970",
     "name": "\u041e\u041e\u041e \u00ab\u0421\u0432\u0435\u0442 \u0416\u0438\u043b\u0441\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -2243,7 +2269,7 @@
   "model": "tenant.company",
   "pk": 213,
   "fields": {
-    "inn": 7714009234,
+    "inn": "7714009234",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u0445\u0443\u0434\u043e\u0436\u043d\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -2252,7 +2278,7 @@
   "model": "tenant.company",
   "pk": 214,
   "fields": {
-    "inn": 7712074012,
+    "inn": "7712074012",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u043e\u043d\u0448\u0442\u0430\u0434\u0442\u00bb",
     "ya_num": -1
   }
@@ -2261,7 +2287,7 @@
   "model": "tenant.company",
   "pk": 215,
   "fields": {
-    "inn": 7709270458,
+    "inn": "7709270458",
     "name": "\u0422\u0421\u0416 \u00ab\u0417\u0432\u0435\u0437\u0434\u043e\u043f\u0430\u0434\u00bb",
     "ya_num": -1
   }
@@ -2270,7 +2296,7 @@
   "model": "tenant.company",
   "pk": 216,
   "fields": {
-    "inn": 7707071288,
+    "inn": "7707071288",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0430\u0437\u0435\u0442\u0447\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -2279,7 +2305,7 @@
   "model": "tenant.company",
   "pk": 217,
   "fields": {
-    "inn": 7704543895,
+    "inn": "7704543895",
     "name": "\u0422\u0421\u0416 \u00ab\u0421\u0438\u0432\u0446\u0435\u0432 \u0412\u0440\u0430\u0436\u0435\u043a 20\u00bb",
     "ya_num": -1
   }
@@ -2288,7 +2314,7 @@
   "model": "tenant.company",
   "pk": 218,
   "fields": {
-    "inn": 7703118305,
+    "inn": "7703118305",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0422\u041e-\u0412\u0422\u041e\u0420\u041e\u0419\u00bb",
     "ya_num": -1
   }
@@ -2297,7 +2323,7 @@
   "model": "tenant.company",
   "pk": 219,
   "fields": {
-    "inn": 7702019661,
+    "inn": "7702019661",
     "name": "\u0417\u0410\u041e \u0440\u0435\u043c\u043e\u043d\u0442\u043d\u043e-\u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0444\u0438\u0440\u043c\u0430 \u00ab\u0420\u0435\u043c\u0441\u0442\u0440\u043e\u0439\u0441\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -2306,7 +2332,7 @@
   "model": "tenant.company",
   "pk": 220,
   "fields": {
-    "inn": 7743615208,
+    "inn": "7743615208",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u0414\u0415\u0417 \u0413\u043e\u043b\u043e\u0432\u0438\u043d\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2315,7 +2341,7 @@
   "model": "tenant.company",
   "pk": 221,
   "fields": {
-    "inn": 7737054603,
+    "inn": "7737054603",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0443\u0445\u0443\u043c\u0438\u00bb",
     "ya_num": -1
   }
@@ -2324,7 +2350,7 @@
   "model": "tenant.company",
   "pk": 222,
   "fields": {
-    "inn": 7734095714,
+    "inn": "7734095714",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043b\u0443\u0442\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -2333,7 +2359,7 @@
   "model": "tenant.company",
   "pk": 223,
   "fields": {
-    "inn": 7733020321,
+    "inn": "7733020321",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0440\u0433\u0443\u043d\u044c\u00bb",
     "ya_num": -1
   }
@@ -2342,7 +2368,7 @@
   "model": "tenant.company",
   "pk": 224,
   "fields": {
-    "inn": 7731116885,
+    "inn": "7731116885",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043e\u0431\u0440\u0443\u0439\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -2351,7 +2377,7 @@
   "model": "tenant.company",
   "pk": 225,
   "fields": {
-    "inn": 7730010075,
+    "inn": "7730010075",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0438\u0435\u0432\u00bb",
     "ya_num": -1
   }
@@ -2360,7 +2386,7 @@
   "model": "tenant.company",
   "pk": 226,
   "fields": {
-    "inn": 7728126749,
+    "inn": "7728126749",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0440\u0443\u0436\u0431\u0430-17\u00bb",
     "ya_num": -1
   }
@@ -2369,7 +2395,7 @@
   "model": "tenant.company",
   "pk": 227,
   "fields": {
-    "inn": 7728096942,
+    "inn": "7728096942",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0435\u043b\u0435\u0442\u0430\u0439\u043f\u00bb",
     "ya_num": -1
   }
@@ -2378,7 +2404,7 @@
   "model": "tenant.company",
   "pk": 228,
   "fields": {
-    "inn": 7728069378,
+    "inn": "7728069378",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0435\u0440\u0432\u043e\u043f\u0435\u0447\u0430\u0442\u043d\u0438\u043a \u0424\u0435\u0434\u043e\u0440\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -2387,7 +2413,7 @@
   "model": "tenant.company",
   "pk": 229,
   "fields": {
-    "inn": 7727101815,
+    "inn": "7727101815",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-27\u00bb",
     "ya_num": -1
   }
@@ -2396,7 +2422,7 @@
   "model": "tenant.company",
   "pk": 230,
   "fields": {
-    "inn": 7727027833,
+    "inn": "7727027833",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-10\u00bb",
     "ya_num": -1
   }
@@ -2405,7 +2431,7 @@
   "model": "tenant.company",
   "pk": 231,
   "fields": {
-    "inn": 7725815123,
+    "inn": "7725815123",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0414\u043e\u043d\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -2414,7 +2440,7 @@
   "model": "tenant.company",
   "pk": 232,
   "fields": {
-    "inn": 7724180304,
+    "inn": "7724180304",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043e\u0440\u0438\u0441\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2423,7 +2449,7 @@
   "model": "tenant.company",
   "pk": 233,
   "fields": {
-    "inn": 7723304814,
+    "inn": "7723304814",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0443\u0436\u043a\u0438\u00bb",
     "ya_num": -1
   }
@@ -2432,7 +2458,7 @@
   "model": "tenant.company",
   "pk": 234,
   "fields": {
-    "inn": 7720060077,
+    "inn": "7720060077",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0430\u043c\u0431\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -2441,7 +2467,7 @@
   "model": "tenant.company",
   "pk": 235,
   "fields": {
-    "inn": 7719078337,
+    "inn": "7719078337",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0435\u0440\u043c\u044c\u00bb",
     "ya_num": -1
   }
@@ -2450,7 +2476,7 @@
   "model": "tenant.company",
   "pk": 236,
   "fields": {
-    "inn": 7717033997,
+    "inn": "7717033997",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0435\u043e\u043b\u043e\u0433-\u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0441\u0442\u00bb",
     "ya_num": -1
   }
@@ -2459,7 +2485,7 @@
   "model": "tenant.company",
   "pk": 237,
   "fields": {
-    "inn": 7716086668,
+    "inn": "7716086668",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043e\u043b\u044c\u0448\u0435\u0432\u0438\u0447\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -2468,7 +2494,7 @@
   "model": "tenant.company",
   "pk": 238,
   "fields": {
-    "inn": 7715131607,
+    "inn": "7715131607",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u043d\u0430\u043c\u044f \u041f\u043e\u0431\u0435\u0434\u044b\u00bb",
     "ya_num": -1
   }
@@ -2477,7 +2503,7 @@
   "model": "tenant.company",
   "pk": 239,
   "fields": {
-    "inn": 7714761902,
+    "inn": "7714761902",
     "name": "\u0422\u0421\u0416 \u00ab\u0425\u043e\u0440\u043e\u0448\u0435\u0432\u043a\u0430 82\u00bb",
     "ya_num": -1
   }
@@ -2486,7 +2512,7 @@
   "model": "tenant.company",
   "pk": 240,
   "fields": {
-    "inn": 7714002302,
+    "inn": "7714002302",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0440\u043a\u0435\u0441\u0442\u0440 \u0413\u0410\u0411\u0422\u00bb",
     "ya_num": -1
   }
@@ -2495,7 +2521,7 @@
   "model": "tenant.company",
   "pk": 241,
   "fields": {
-    "inn": 7712073756,
+    "inn": "7712073756",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u043e\u043d\u043e\u0440\u00bb",
     "ya_num": -1
   }
@@ -2504,7 +2530,7 @@
   "model": "tenant.company",
   "pk": 242,
   "fields": {
-    "inn": 7709124383,
+    "inn": "7709124383",
     "name": "\u0413\u0423\u041f \u00ab\u0414\u0415\u0417 \u0422\u0430\u0433\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -2513,7 +2539,7 @@
   "model": "tenant.company",
   "pk": 243,
   "fields": {
-    "inn": 7707060857,
+    "inn": "7707060857",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0438\u043c\u0438\u043a-19\u00bb",
     "ya_num": -1
   }
@@ -2522,7 +2548,7 @@
   "model": "tenant.company",
   "pk": 244,
   "fields": {
-    "inn": 7704535421,
+    "inn": "7704535421",
     "name": "\u0422\u0421\u0416 \u00ab\u0422\u0440\u0443\u0431\u043d\u0438\u043a\u043e\u0432\u0441\u043a\u0438\u0439 24\u00bb",
     "ya_num": -1
   }
@@ -2531,7 +2557,7 @@
   "model": "tenant.company",
   "pk": 245,
   "fields": {
-    "inn": 7703116876,
+    "inn": "7703116876",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u043b\u043e\u0434\u043e\u0439 \u043a\u0438\u043d\u0435\u043c\u0430\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u0441\u0442\u00bb",
     "ya_num": -1
   }
@@ -2540,7 +2566,7 @@
   "model": "tenant.company",
   "pk": 246,
   "fields": {
-    "inn": 7701327053,
+    "inn": "7701327053",
     "name": "\u0422\u0421\u0416 \u00ab\u041c\u044f\u0441\u043d\u0438\u0446\u043a\u0430\u044f 24\u00bb",
     "ya_num": -1
   }
@@ -2549,7 +2575,7 @@
   "model": "tenant.company",
   "pk": 247,
   "fields": {
-    "inn": 7743588106,
+    "inn": "7743588106",
     "name": "\u0422\u0421\u0416 \u00ab\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u043e\u0433\u043e\u0440\u0441\u043a\u0430\u044f 10\u00bb",
     "ya_num": -1
   }
@@ -2558,7 +2584,7 @@
   "model": "tenant.company",
   "pk": 248,
   "fields": {
-    "inn": 7737053688,
+    "inn": "7737053688",
     "name": "\u0416\u0421\u041a \u00ab\u0416\u0438\u0432\u043e\u043f\u0438\u0441\u043d\u044b\u0439\u00bb",
     "ya_num": -1
   }
@@ -2567,7 +2593,7 @@
   "model": "tenant.company",
   "pk": 249,
   "fields": {
-    "inn": 7734060091,
+    "inn": "7734060091",
     "name": "\u0416\u0421\u041a \u00ab\u0427\u0435\u0440\u043d\u043e\u0432\u0446\u044b\u00bb",
     "ya_num": -1
   }
@@ -2576,7 +2602,7 @@
   "model": "tenant.company",
   "pk": 250,
   "fields": {
-    "inn": 7733012610,
+    "inn": "7733012610",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-10\u00bb",
     "ya_num": -1
   }
@@ -2585,7 +2611,7 @@
   "model": "tenant.company",
   "pk": 251,
   "fields": {
-    "inn": 7731036735,
+    "inn": "7731036735",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0438\u0435\u043f\u0430\u044f\u00bb",
     "ya_num": -1
   }
@@ -2594,7 +2620,7 @@
   "model": "tenant.company",
   "pk": 252,
   "fields": {
-    "inn": 7728848617,
+    "inn": "7728848617",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u0410\u043a\u0430\u0434\u0435\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2603,7 +2629,7 @@
   "model": "tenant.company",
   "pk": 253,
   "fields": {
-    "inn": 7728112577,
+    "inn": "7728112577",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0430\u0440\u0430\u043b\u043b\u0435\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -2612,7 +2638,7 @@
   "model": "tenant.company",
   "pk": 254,
   "fields": {
-    "inn": 7728085644,
+    "inn": "7728085644",
     "name": "\u0416\u0421\u041a \u00ab\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044f\u00bb",
     "ya_num": -1
   }
@@ -2621,7 +2647,7 @@
   "model": "tenant.company",
   "pk": 255,
   "fields": {
-    "inn": 7728026328,
+    "inn": "7728026328",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0432\u0443\u043a\u00bb",
     "ya_num": -1
   }
@@ -2630,7 +2656,7 @@
   "model": "tenant.company",
   "pk": 256,
   "fields": {
-    "inn": 7727066455,
+    "inn": "7727066455",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0430\u043a\u0443\u0443\u043c\u0449\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -2639,7 +2665,7 @@
   "model": "tenant.company",
   "pk": 257,
   "fields": {
-    "inn": 7727019818,
+    "inn": "7727019818",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-14\u00bb",
     "ya_num": -1
   }
@@ -2648,7 +2674,7 @@
   "model": "tenant.company",
   "pk": 258,
   "fields": {
-    "inn": 7724180544,
+    "inn": "7724180544",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-16\u00bb",
     "ya_num": -1
   }
@@ -2657,7 +2683,7 @@
   "model": "tenant.company",
   "pk": 259,
   "fields": {
-    "inn": 7724157104,
+    "inn": "7724157104",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043e\u0434\u043e\u043b\u044c\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -2666,7 +2692,7 @@
   "model": "tenant.company",
   "pk": 260,
   "fields": {
-    "inn": 7720093700,
+    "inn": "7720093700",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u043d\u0430\u0442\u0430\u00bb",
     "ya_num": -1
   }
@@ -2675,7 +2701,7 @@
   "model": "tenant.company",
   "pk": 261,
   "fields": {
-    "inn": 7720058416,
+    "inn": "7720058416",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0430\u0440\u0442\u0435\u043d\u00bb",
     "ya_num": -1
   }
@@ -2684,7 +2710,7 @@
   "model": "tenant.company",
   "pk": 262,
   "fields": {
-    "inn": 7718116903,
+    "inn": "7718116903",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u043a\u0441\u0442\u0440\u0430\u00bb",
     "ya_num": -1
   }
@@ -2693,7 +2719,7 @@
   "model": "tenant.company",
   "pk": 263,
   "fields": {
-    "inn": 7716104003,
+    "inn": "7716104003",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0435\u043b\u043e\u0437\u0435\u0440\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -2702,7 +2728,7 @@
   "model": "tenant.company",
   "pk": 264,
   "fields": {
-    "inn": 7716038590,
+    "inn": "7716038590",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u043e\u0441\u044c\u00bb",
     "ya_num": -1
   }
@@ -2711,7 +2737,7 @@
   "model": "tenant.company",
   "pk": 265,
   "fields": {
-    "inn": 7715045690,
+    "inn": "7715045690",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0435\u0439\u0441\u00bb",
     "ya_num": -1
   }
@@ -2720,7 +2746,7 @@
   "model": "tenant.company",
   "pk": 266,
   "fields": {
-    "inn": 7714061072,
+    "inn": "7714061072",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0430\u0448\u0442\u0430\u043d\u044b\u00bb",
     "ya_num": -1
   }
@@ -2729,7 +2755,7 @@
   "model": "tenant.company",
   "pk": 267,
   "fields": {
-    "inn": 7713045247,
+    "inn": "7713045247",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u043e\u043b\u043e\u0433\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -2738,7 +2764,7 @@
   "model": "tenant.company",
   "pk": 268,
   "fields": {
-    "inn": 7710058752,
+    "inn": "7710058752",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u043b\u043e\u0434\u0435\u0436\u044c \u0442\u0435\u0430\u0442\u0440\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -2747,7 +2773,7 @@
   "model": "tenant.company",
   "pk": 269,
   "fields": {
-    "inn": 7707523657,
+    "inn": "7707523657",
     "name": "\u0422\u0421\u0416 \u00ab\u041b\u0430\u043c\u0438\u0440\u0430\u043b\u044c\u00bb",
     "ya_num": -1
   }
@@ -2756,7 +2782,7 @@
   "model": "tenant.company",
   "pk": 270,
   "fields": {
-    "inn": 7705519207,
+    "inn": "7705519207",
     "name": "\u0422\u0421\u0416 \u00ab\u041e\u0440\u0434\u044b\u043d\u043a\u0430 31\u00bb",
     "ya_num": -1
   }
@@ -2765,7 +2791,7 @@
   "model": "tenant.company",
   "pk": 271,
   "fields": {
-    "inn": 7704047103,
+    "inn": "7704047103",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0410\u0411\u0422 \u041b\u0418\u0420\u0410\u00bb",
     "ya_num": -1
   }
@@ -2774,7 +2800,7 @@
   "model": "tenant.company",
   "pk": 272,
   "fields": {
-    "inn": 7703011584,
+    "inn": "7703011584",
     "name": "\u0422\u0421\u0416 \u00ab\u041c\u0416\u041a \u00ab\u041a\u0440\u0430\u0441\u043d\u0430\u044f \u041f\u0440\u0435\u0441\u043d\u044f\u00bb",
     "ya_num": -1
   }
@@ -2783,7 +2809,7 @@
   "model": "tenant.company",
   "pk": 273,
   "fields": {
-    "inn": 7737058301,
+    "inn": "7737058301",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0430\u0440\u043d\u0430\u0443\u043b\u00bb",
     "ya_num": -1
   }
@@ -2792,7 +2818,7 @@
   "model": "tenant.company",
   "pk": 274,
   "fields": {
-    "inn": 7736034403,
+    "inn": "7736034403",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u043e\u0440\u043e\u043d\u0446\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -2801,7 +2827,7 @@
   "model": "tenant.company",
   "pk": 275,
   "fields": {
-    "inn": 7733126977,
+    "inn": "7733126977",
     "name": "\u0417\u0410\u041e \u00ab\u042d\u0441\u0442\u0435\u0439\u0442 \u0421\u0435\u0440\u0432\u0438\u0441 \u0434\u0438\u0440\u0435\u043a\u0446\u0438\u044f \u041a\u0443\u0440\u043a\u0438\u043d\u043e \u0421\u0417\u0410\u041e\u00bb",
     "ya_num": -1
   }
@@ -2810,7 +2836,7 @@
   "model": "tenant.company",
   "pk": 276,
   "fields": {
-    "inn": 7731155193,
+    "inn": "7731155193",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u041c\u0411\u0410\u00bb",
     "ya_num": -1
   }
@@ -2819,7 +2845,7 @@
   "model": "tenant.company",
   "pk": 277,
   "fields": {
-    "inn": 7731031247,
+    "inn": "7731031247",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043b\u0430\u0439\u043f\u0435\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -2828,7 +2854,7 @@
   "model": "tenant.company",
   "pk": 278,
   "fields": {
-    "inn": 7728617240,
+    "inn": "7728617240",
     "name": "\u0417\u0410\u041e \u00ab\u0416\u041a \u0410\u0440\u043a\u0430\u0434\u0430 \u0425\u0430\u0443\u0441\u00bb",
     "ya_num": -1
   }
@@ -2837,7 +2863,7 @@
   "model": "tenant.company",
   "pk": 279,
   "fields": {
-    "inn": 7728112295,
+    "inn": "7728112295",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u043d\u0433\u0440\u0435\u0441\u0441\u00bb",
     "ya_num": -1
   }
@@ -2846,7 +2872,7 @@
   "model": "tenant.company",
   "pk": 280,
   "fields": {
-    "inn": 7728085154,
+    "inn": "7728085154",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0430\u043b\u044c\u043d\u0435\u0432\u043e\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -2855,7 +2881,7 @@
   "model": "tenant.company",
   "pk": 281,
   "fields": {
-    "inn": 7728025469,
+    "inn": "7728025469",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-23\u00bb",
     "ya_num": -1
   }
@@ -2864,7 +2890,7 @@
   "model": "tenant.company",
   "pk": 282,
   "fields": {
-    "inn": 7727066423,
+    "inn": "7727066423",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0438\u0441\u043c\u0443\u0442\u00bb",
     "ya_num": -1
   }
@@ -2873,7 +2899,7 @@
   "model": "tenant.company",
   "pk": 283,
   "fields": {
-    "inn": 7727011791,
+    "inn": "7727011791",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-11\u00bb",
     "ya_num": -1
   }
@@ -2882,7 +2908,7 @@
   "model": "tenant.company",
   "pk": 284,
   "fields": {
-    "inn": 7724180520,
+    "inn": "7724180520",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-14 \u00ab",
     "ya_num": -1
   }
@@ -2891,7 +2917,7 @@
   "model": "tenant.company",
   "pk": 285,
   "fields": {
-    "inn": 7724157070,
+    "inn": "7724157070",
     "name": "\u0416\u0421\u041a \u00ab\u0415\u0440\u0435\u0432\u0430\u043d\u00bb",
     "ya_num": -1
   }
@@ -2900,7 +2926,7 @@
   "model": "tenant.company",
   "pk": 286,
   "fields": {
-    "inn": 7720093266,
+    "inn": "7720093266",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u044e\u0439\u0441\u00bb",
     "ya_num": -1
   }
@@ -2909,7 +2935,7 @@
   "model": "tenant.company",
   "pk": 287,
   "fields": {
-    "inn": 7720017064,
+    "inn": "7720017064",
     "name": "\u0416\u0421\u041a \u00ab\u0416\u0430\u0432\u043e\u0440\u043e\u043d\u043e\u043a\u00bb",
     "ya_num": -1
   }
@@ -2918,7 +2944,7 @@
   "model": "tenant.company",
   "pk": 288,
   "fields": {
-    "inn": 7718055400,
+    "inn": "7718055400",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0440\u0435\u043d\u0430\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -2927,7 +2953,7 @@
   "model": "tenant.company",
   "pk": 289,
   "fields": {
-    "inn": 7716098624,
+    "inn": "7716098624",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u043b\u043e\u0440\u0430\u00bb",
     "ya_num": -1
   }
@@ -2936,7 +2962,7 @@
   "model": "tenant.company",
   "pk": 290,
   "fields": {
-    "inn": 7716033747,
+    "inn": "7716033747",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0437\u0435\u0440\u0436\u0438\u043d\u0435\u0446-17\u00bb",
     "ya_num": -1
   }
@@ -2945,7 +2971,7 @@
   "model": "tenant.company",
   "pk": 291,
   "fields": {
-    "inn": 7715044672,
+    "inn": "7715044672",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u044b\u0441\u0442\u0440\u0435\u043b\u00bb",
     "ya_num": -1
   }
@@ -2954,7 +2980,7 @@
   "model": "tenant.company",
   "pk": 292,
   "fields": {
-    "inn": 7714041894,
+    "inn": "7714041894",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0435\u0442\u0440\u043e\u00bb",
     "ya_num": -1
   }
@@ -2963,7 +2989,7 @@
   "model": "tenant.company",
   "pk": 293,
   "fields": {
-    "inn": 7713035009,
+    "inn": "7713035009",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u0430\u0433\u043d\u0438\u0442\u00bb",
     "ya_num": -1
   }
@@ -2972,7 +2998,7 @@
   "model": "tenant.company",
   "pk": 294,
   "fields": {
-    "inn": 7710030563,
+    "inn": "7710030563",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0430\u0441\u0442\u0435\u0440\u0430 \u042d\u0441\u0442\u0440\u0430\u0434\u044b\u00bb",
     "ya_num": -1
   }
@@ -2981,7 +3007,7 @@
   "model": "tenant.company",
   "pk": 295,
   "fields": {
-    "inn": 7707121884,
+    "inn": "7707121884",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0438\u043c\u0438\u043a-18\u00bb",
     "ya_num": -1
   }
@@ -2990,7 +3016,7 @@
   "model": "tenant.company",
   "pk": 296,
   "fields": {
-    "inn": 7705502267,
+    "inn": "7705502267",
     "name": "\u0417\u0410\u041e \u00ab\u0414\u0435\u043a\u0440\u0430-\u0421\u0442\u0440\u043e\u0439\u044d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u044f\u00bb",
     "ya_num": -1
   }
@@ -2999,7 +3025,7 @@
   "model": "tenant.company",
   "pk": 297,
   "fields": {
-    "inn": 7703660437,
+    "inn": "7703660437",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a -10 \u041f\u0440\u0435\u0441\u043d\u0435\u043d\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -3008,7 +3034,7 @@
   "model": "tenant.company",
   "pk": 298,
   "fields": {
-    "inn": 7703010005,
+    "inn": "7703010005",
     "name": "\u041e\u0410\u041e \u00ab\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u043c\u0430\u0448\u0438\u043d\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u0432\u043e\u0434 \u00ab\u0420\u0430\u0441\u0441\u0432\u0435\u0442\u00bb",
     "ya_num": -1
   }
@@ -3017,7 +3043,7 @@
   "model": "tenant.company",
   "pk": 299,
   "fields": {
-    "inn": 7737058220,
+    "inn": "7737058220",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u044f\u0442\u0438\u0433\u043e\u0440\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -3026,7 +3052,7 @@
   "model": "tenant.company",
   "pk": 300,
   "fields": {
-    "inn": 7735020711,
+    "inn": "7735020711",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u041a\u0440\u044e\u043a\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -3035,7 +3061,7 @@
   "model": "tenant.company",
   "pk": 301,
   "fields": {
-    "inn": 7734036155,
+    "inn": "7734036155",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u0430\u0441\u043d\u043e\u0434\u0430\u0440\u00bb",
     "ya_num": -1
   }
@@ -3044,7 +3070,7 @@
   "model": "tenant.company",
   "pk": 302,
   "fields": {
-    "inn": 7732084322,
+    "inn": "7732084322",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u043b\u043d\u0446\u0435\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3053,7 +3079,7 @@
   "model": "tenant.company",
   "pk": 303,
   "fields": {
-    "inn": 7731091006,
+    "inn": "7731091006",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0435\u0442\u0443\u043d\u044c\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -3062,7 +3088,7 @@
   "model": "tenant.company",
   "pk": 304,
   "fields": {
-    "inn": 7729305892,
+    "inn": "7729305892",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043e\u043b\u0434\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -3071,7 +3097,7 @@
   "model": "tenant.company",
   "pk": 305,
   "fields": {
-    "inn": 7728123890,
+    "inn": "7728123890",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0440\u0438\u0437\u043e\u043b\u0438\u0442\u00bb",
     "ya_num": -1
   }
@@ -3080,7 +3106,7 @@
   "model": "tenant.company",
   "pk": 306,
   "fields": {
-    "inn": 7728091422,
+    "inn": "7728091422",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0435\u0433\u0430\u0441\u00bb",
     "ya_num": -1
   }
@@ -3089,7 +3115,7 @@
   "model": "tenant.company",
   "pk": 307,
   "fields": {
-    "inn": 7728042841,
+    "inn": "7728042841",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u044f\u0437\u0430\u043d\u044c\u00bb",
     "ya_num": -1
   }
@@ -3098,7 +3124,7 @@
   "model": "tenant.company",
   "pk": 308,
   "fields": {
-    "inn": 7727071470,
+    "inn": "7727071470",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0430\u0437\u0432\u0435\u0434\u043a\u0430 \u043d\u0435\u0434\u0440\u00bb",
     "ya_num": -1
   }
@@ -3107,7 +3133,7 @@
   "model": "tenant.company",
   "pk": 309,
   "fields": {
-    "inn": 7727021662,
+    "inn": "7727021662",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-15\u00bb",
     "ya_num": -1
   }
@@ -3116,7 +3142,7 @@
   "model": "tenant.company",
   "pk": 310,
   "fields": {
-    "inn": 7724180720,
+    "inn": "7724180720",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0440\u044f\u0437\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -3125,7 +3151,7 @@
   "model": "tenant.company",
   "pk": 311,
   "fields": {
-    "inn": 7724180230,
+    "inn": "7724180230",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u0432\u0440\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -3134,7 +3160,7 @@
   "model": "tenant.company",
   "pk": 312,
   "fields": {
-    "inn": 7721061891,
+    "inn": "7721061891",
     "name": "\u0416\u0421\u041a \u00ab\u0416\u0434\u0430\u043d\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3143,7 +3169,7 @@
   "model": "tenant.company",
   "pk": 313,
   "fields": {
-    "inn": 7720059970,
+    "inn": "7720059970",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u043c\u043f\u0430\u0441\u00bb",
     "ya_num": -1
   }
@@ -3152,7 +3178,7 @@
   "model": "tenant.company",
   "pk": 314,
   "fields": {
-    "inn": 7719062739,
+    "inn": "7719062739",
     "name": "\u0416\u0421\u041a \u00ab\u0426\u0435\u043b\u0438\u043d\u043e\u0433\u0440\u0430\u0434\u00bb",
     "ya_num": -1
   }
@@ -3161,7 +3187,7 @@
   "model": "tenant.company",
   "pk": 315,
   "fields": {
-    "inn": 7716109587,
+    "inn": "7716109587",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0438\u043b\u044c\u043c\u00bb",
     "ya_num": -1
   }
@@ -3170,7 +3196,7 @@
   "model": "tenant.company",
   "pk": 316,
   "fields": {
-    "inn": 7716063685,
+    "inn": "7716063685",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0438\u0440\u0438\u0442\u00bb",
     "ya_num": -1
   }
@@ -3179,7 +3205,7 @@
   "model": "tenant.company",
   "pk": 317,
   "fields": {
-    "inn": 7715069444,
+    "inn": "7715069444",
     "name": "\u0416\u0421\u041a \u00ab\u0417\u0438\u043c\u043d\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3188,7 +3214,7 @@
   "model": "tenant.company",
   "pk": 318,
   "fields": {
-    "inn": 7714580504,
+    "inn": "7714580504",
     "name": "\u0422\u0421\u0416 \u00ab\u041d\u0410 \u0411\u041e\u041b\u042c\u0428\u041e\u041c \u041a\u041e\u041f\u0422\u0415\u0412\u0421\u041a\u041e\u041c\u00bb",
     "ya_num": -1
   }
@@ -3197,7 +3223,7 @@
   "model": "tenant.company",
   "pk": 319,
   "fields": {
-    "inn": 7713644226,
+    "inn": "7713644226",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u0414\u0415\u0417 \u0440\u0430\u0439\u043e\u043d\u0430 \u0414\u043c\u0438\u0442\u0440\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3206,7 +3232,7 @@
   "model": "tenant.company",
   "pk": 320,
   "fields": {
-    "inn": 7710722780,
+    "inn": "7710722780",
     "name": "\u0422\u0421\u0416 \u00ab\u0422\u0432\u0435\u0440\u0441\u043a\u0430\u044f 19\u00bb",
     "ya_num": -1
   }
@@ -3215,7 +3241,7 @@
   "model": "tenant.company",
   "pk": 321,
   "fields": {
-    "inn": 7708600833,
+    "inn": "7708600833",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u00ab\u041a\u0440\u0430\u0441\u043d\u043e\u0435 \u0441\u0435\u043b\u043e\u00bb",
     "ya_num": -1
   }
@@ -3224,7 +3250,7 @@
   "model": "tenant.company",
   "pk": 322,
   "fields": {
-    "inn": 7705853265,
+    "inn": "7705853265",
     "name": "\u041e\u041e\u041e \u00ab\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0421\u0410\u0413\u0438\u041a\u00bb",
     "ya_num": -1
   }
@@ -3233,7 +3259,7 @@
   "model": "tenant.company",
   "pk": 323,
   "fields": {
-    "inn": 7704238242,
+    "inn": "7704238242",
     "name": "\u0422\u0421\u0416 \u00ab\u0420\u0435\u0442\u0440\u043e-35\u00bb",
     "ya_num": -1
   }
@@ -3242,7 +3268,7 @@
   "model": "tenant.company",
   "pk": 324,
   "fields": {
-    "inn": 7703052848,
+    "inn": "7703052848",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0438\u043c\u0435\u0442\u00bb",
     "ya_num": -1
   }
@@ -3251,7 +3277,7 @@
   "model": "tenant.company",
   "pk": 325,
   "fields": {
-    "inn": 7743063035,
+    "inn": "7743063035",
     "name": "\u0422\u0421\u0416 \u00ab\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u043e\u0435 \u0448\u043e\u0441\u0441\u0435, 52\u0411\u00bb",
     "ya_num": -1
   }
@@ -3260,7 +3286,7 @@
   "model": "tenant.company",
   "pk": 326,
   "fields": {
-    "inn": 7736160944,
+    "inn": "7736160944",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0438\u0433\u0440\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -3269,7 +3295,7 @@
   "model": "tenant.company",
   "pk": 327,
   "fields": {
-    "inn": 7734003880,
+    "inn": "7734003880",
     "name": "\u041e\u041e\u041e \u00ab\u0418\u0412\u0410-XXI\u00bb",
     "ya_num": -1
   }
@@ -3278,7 +3304,7 @@
   "model": "tenant.company",
   "pk": 328,
   "fields": {
-    "inn": 7732084210,
+    "inn": "7732084210",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u043b\u043d\u0446\u0435\u0432\u043e-16\u00bb",
     "ya_num": -1
   }
@@ -3287,7 +3313,7 @@
   "model": "tenant.company",
   "pk": 329,
   "fields": {
-    "inn": 7731062862,
+    "inn": "7731062862",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0430\u0443\u0433\u0430\u0432\u0430\u00bb",
     "ya_num": -1
   }
@@ -3296,7 +3322,7 @@
   "model": "tenant.company",
   "pk": 330,
   "fields": {
-    "inn": 7729301104,
+    "inn": "7729301104",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u0435\u0439\u0442\u0440\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -3305,7 +3331,7 @@
   "model": "tenant.company",
   "pk": 331,
   "fields": {
-    "inn": 7728120592,
+    "inn": "7728120592",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0442\u0440\u043e\u0439\u043f\u043b\u0430\u0441\u0442\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -3314,7 +3340,7 @@
   "model": "tenant.company",
   "pk": 332,
   "fields": {
-    "inn": 7728090860,
+    "inn": "7728090860",
     "name": "\u0416\u0421\u041a \u00ab\u0428\u0430\u0439\u0431\u0430\u00bb",
     "ya_num": -1
   }
@@ -3323,7 +3349,7 @@
   "model": "tenant.company",
   "pk": 333,
   "fields": {
-    "inn": 7728035837,
+    "inn": "7728035837",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0440\u0438\u043f\u0442\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -3332,7 +3358,7 @@
   "model": "tenant.company",
   "pk": 334,
   "fields": {
-    "inn": 7727071261,
+    "inn": "7727071261",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0418\u0420\u0413\u042d\u041c\u00bb",
     "ya_num": -1
   }
@@ -3341,7 +3367,7 @@
   "model": "tenant.company",
   "pk": 335,
   "fields": {
-    "inn": 7727021020,
+    "inn": "7727021020",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-23\u00bb",
     "ya_num": -1
   }
@@ -3350,7 +3376,7 @@
   "model": "tenant.company",
   "pk": 336,
   "fields": {
-    "inn": 7724180632,
+    "inn": "7724180632",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u043e\u0432\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -3359,7 +3385,7 @@
   "model": "tenant.company",
   "pk": 337,
   "fields": {
-    "inn": 7724176139,
+    "inn": "7724176139",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0410\u041a\u0423\u00bb",
     "ya_num": -1
   }
@@ -3368,7 +3394,7 @@
   "model": "tenant.company",
   "pk": 338,
   "fields": {
-    "inn": 7721029866,
+    "inn": "7721029866",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u044c\u0432\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -3377,7 +3403,7 @@
   "model": "tenant.company",
   "pk": 339,
   "fields": {
-    "inn": 7720059850,
+    "inn": "7720059850",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0441\u0442\u0440\u0435\u0447\u0430\u00bb",
     "ya_num": -1
   }
@@ -3386,7 +3412,7 @@
   "model": "tenant.company",
   "pk": 340,
   "fields": {
-    "inn": 7719048702,
+    "inn": "7719048702",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u0418\u0418\u041f\u0420\u041e\u0415\u041a\u0422\u00bb",
     "ya_num": -1
   }
@@ -3395,7 +3421,7 @@
   "model": "tenant.company",
   "pk": 341,
   "fields": {
-    "inn": 7716105991,
+    "inn": "7716105991",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u043e\u043b\u0443\u0431\u043e\u0439 \u042d\u043a\u0440\u0430\u043d\u00bb",
     "ya_num": -1
   }
@@ -3404,7 +3430,7 @@
   "model": "tenant.company",
   "pk": 342,
   "fields": {
-    "inn": 7716059368,
+    "inn": "7716059368",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u043e\u0431\u043e\u043b\u00bb",
     "ya_num": -1
   }
@@ -3413,7 +3439,7 @@
   "model": "tenant.company",
   "pk": 343,
   "fields": {
-    "inn": 7715049060,
+    "inn": "7715049060",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0443\u0434\u043e\u0436\u043d\u0438\u043a \u043a\u043d\u0438\u0433\u0438\u00bb",
     "ya_num": -1
   }
@@ -3422,7 +3448,7 @@
   "model": "tenant.company",
   "pk": 344,
   "fields": {
-    "inn": 7714522189,
+    "inn": "7714522189",
     "name": "\u0422\u0421\u0416 \u00ab\u041c\u0430\u043b\u0430\u0445\u0438\u0442-26\u00bb",
     "ya_num": -1
   }
@@ -3431,7 +3457,7 @@
   "model": "tenant.company",
   "pk": 345,
   "fields": {
-    "inn": 7713593860,
+    "inn": "7713593860",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u041a \u0411\u0435\u0441\u043a\u0443\u0434\u043d\u0438\u043a\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3440,7 +3466,7 @@
   "model": "tenant.company",
   "pk": 346,
   "fields": {
-    "inn": 7710631814,
+    "inn": "7710631814",
     "name": "\u0422\u0421\u0416 \u00ab\u0414\u043e\u043c \u043d\u0430 \u0413\u0430\u0448\u0435\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -3449,7 +3475,7 @@
   "model": "tenant.company",
   "pk": 347,
   "fields": {
-    "inn": 7708178065,
+    "inn": "7708178065",
     "name": "\u0422\u0421\u0416 \u00ab\u041d\u0430 \u0413\u0440\u043e\u0445\u043e\u043b\u044c\u0441\u043a\u043e\u043c\u00bb",
     "ya_num": -1
   }
@@ -3458,7 +3484,7 @@
   "model": "tenant.company",
   "pk": 348,
   "fields": {
-    "inn": 7705741032,
+    "inn": "7705741032",
     "name": "\u0422\u0421\u0416 \u00ab\u041f\u044f\u0442\u043d\u0438\u0446\u043a\u0430\u044f 37\u00bb",
     "ya_num": -1
   }
@@ -3467,7 +3493,7 @@
   "model": "tenant.company",
   "pk": 349,
   "fields": {
-    "inn": 7704232843,
+    "inn": "7704232843",
     "name": "\u0422\u0421\u0416 \u00ab\u0410\u0440\u0431\u0430\u0442 43\u00bb",
     "ya_num": -1
   }
@@ -3476,7 +3502,7 @@
   "model": "tenant.company",
   "pk": 350,
   "fields": {
-    "inn": 7703041356,
+    "inn": "7703041356",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0438\u043c\u0438\u043a-\u043f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0449\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -3485,7 +3511,7 @@
   "model": "tenant.company",
   "pk": 351,
   "fields": {
-    "inn": 7743058910,
+    "inn": "7743058910",
     "name": "\u0422\u0421\u0416 \u00ab\u041b\u0430\u0432\u043e\u0447\u043a\u0438\u043d\u0430 40 49\u00bb",
     "ya_num": -1
   }
@@ -3494,7 +3520,7 @@
   "model": "tenant.company",
   "pk": 352,
   "fields": {
-    "inn": 7736134221,
+    "inn": "7736134221",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043e\u043b\u043e\u0446\u043a\u00bb",
     "ya_num": -1
   }
@@ -3503,7 +3529,7 @@
   "model": "tenant.company",
   "pk": 353,
   "fields": {
-    "inn": 7733729943,
+    "inn": "7733729943",
     "name": "\u041e\u041e\u041e \u00ab\u0418\u041d\u042d\u041a-\u0416\u0418\u041b\u042c\u0415\u00bb",
     "ya_num": -1
   }
@@ -3512,7 +3538,7 @@
   "model": "tenant.company",
   "pk": 354,
   "fields": {
-    "inn": 7732084185,
+    "inn": "7732084185",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u043b\u043d\u0446\u0435\u0432\u043e-12\u00bb",
     "ya_num": -1
   }
@@ -3521,7 +3547,7 @@
   "model": "tenant.company",
   "pk": 355,
   "fields": {
-    "inn": 7731055030,
+    "inn": "7731055030",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0443\u043f\u0430\u0432\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -3530,7 +3556,7 @@
   "model": "tenant.company",
   "pk": 356,
   "fields": {
-    "inn": 7729154594,
+    "inn": "7729154594",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0410\u041d \u0421\u0421\u0421\u0420\u00bb",
     "ya_num": -1
   }
@@ -3539,7 +3565,7 @@
   "model": "tenant.company",
   "pk": 357,
   "fields": {
-    "inn": 7728118402,
+    "inn": "7728118402",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0440\u043c\u0430\u0432\u0438\u0440\u00bb",
     "ya_num": -1
   }
@@ -3548,7 +3574,7 @@
   "model": "tenant.company",
   "pk": 358,
   "fields": {
-    "inn": 7728090612,
+    "inn": "7728090612",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0430\u043d\u044c\u00bb",
     "ya_num": -1
   }
@@ -3557,7 +3583,7 @@
   "model": "tenant.company",
   "pk": 359,
   "fields": {
-    "inn": 7728029086,
+    "inn": "7728029086",
     "name": "\u0416\u0421\u041a \u00ab\u0425\u0443\u0434\u043e\u0436\u043d\u0438\u043a-\u043c\u043e\u0434\u0435\u043b\u044c\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -3566,7 +3592,7 @@
   "model": "tenant.company",
   "pk": 360,
   "fields": {
-    "inn": 7727067730,
+    "inn": "7727067730",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-18\u00bb",
     "ya_num": -1
   }
@@ -3575,7 +3601,7 @@
   "model": "tenant.company",
   "pk": 361,
   "fields": {
-    "inn": 7727020482,
+    "inn": "7727020482",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-16\u00bb",
     "ya_num": -1
   }
@@ -3584,7 +3610,7 @@
   "model": "tenant.company",
   "pk": 362,
   "fields": {
-    "inn": 7724180625,
+    "inn": "7724180625",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0438\u0446\u0430\u00bb",
     "ya_num": -1
   }
@@ -3593,7 +3619,7 @@
   "model": "tenant.company",
   "pk": 363,
   "fields": {
-    "inn": 7724176097,
+    "inn": "7724176097",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0430\u0437\u0443\u0440\u044c\u00bb",
     "ya_num": -1
   }
@@ -3602,7 +3628,7 @@
   "model": "tenant.company",
   "pk": 364,
   "fields": {
-    "inn": 7720099469,
+    "inn": "7720099469",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u043d\u0433\u0430\u0440\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3611,7 +3637,7 @@
   "model": "tenant.company",
   "pk": 365,
   "fields": {
-    "inn": 7720058462,
+    "inn": "7720058462",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0430\u0434\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3620,7 +3646,7 @@
   "model": "tenant.company",
   "pk": 366,
   "fields": {
-    "inn": 7719005579,
+    "inn": "7719005579",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u043b\u043b\u0430\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -3629,7 +3655,7 @@
   "model": "tenant.company",
   "pk": 367,
   "fields": {
-    "inn": 7716104780,
+    "inn": "7716104780",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0435\u0440\u0435\u043a\u043e\u043f\u00bb",
     "ya_num": -1
   }
@@ -3638,7 +3664,7 @@
   "model": "tenant.company",
   "pk": 368,
   "fields": {
-    "inn": 7716057025,
+    "inn": "7716057025",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u044f\u0437\u044c\u00bb",
     "ya_num": -1
   }
@@ -3647,7 +3673,7 @@
   "model": "tenant.company",
   "pk": 369,
   "fields": {
-    "inn": 7715048797,
+    "inn": "7715048797",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0441\u043a\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -3656,7 +3682,7 @@
   "model": "tenant.company",
   "pk": 370,
   "fields": {
-    "inn": 7714259058,
+    "inn": "7714259058",
     "name": "\u0417\u0410\u041e \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u043e-\u043a\u043e\u043c\u043c\u0443\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u00ab\u0420\u0435\u0444\u043e\u0440\u043c\u0430\u00bb",
     "ya_num": -1
   }
@@ -3665,7 +3691,7 @@
   "model": "tenant.company",
   "pk": 371,
   "fields": {
-    "inn": 7713569233,
+    "inn": "7713569233",
     "name": "\u0422\u0421\u0416 \u00ab\u041d\u0430 \u0411\u0430\u0437\u043e\u0432\u0441\u043a\u043e\u0439\u00bb",
     "ya_num": -1
   }
@@ -3674,7 +3700,7 @@
   "model": "tenant.company",
   "pk": 372,
   "fields": {
-    "inn": 7710171109,
+    "inn": "7710171109",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439 \u0440\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u00bb",
     "ya_num": -1
   }
@@ -3683,7 +3709,7 @@
   "model": "tenant.company",
   "pk": 373,
   "fields": {
-    "inn": 7708053161,
+    "inn": "7708053161",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043f\u0430\u0441\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3692,7 +3718,7 @@
   "model": "tenant.company",
   "pk": 374,
   "fields": {
-    "inn": 7705707419,
+    "inn": "7705707419",
     "name": "\u0422\u0421\u0416 \u00ab\u0413\u043e\u043b\u0438\u043a\u043e\u0432\u0441\u043a\u0438\u0439 15\u00bb",
     "ya_num": -1
   }
@@ -3701,7 +3727,7 @@
   "model": "tenant.company",
   "pk": 375,
   "fields": {
-    "inn": 7704136593,
+    "inn": "7704136593",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0438\u0434\u0430\u0440\u00bb",
     "ya_num": -1
   }
@@ -3710,7 +3736,7 @@
   "model": "tenant.company",
   "pk": 376,
   "fields": {
-    "inn": 7703041148,
+    "inn": "7703041148",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0438\u0434\u0440\u043e\u043c\u0435\u0442\u0446\u0435\u043d\u0442\u0440\u00bb",
     "ya_num": -1
   }
@@ -3719,7 +3745,7 @@
   "model": "tenant.company",
   "pk": 377,
   "fields": {
-    "inn": 7743036835,
+    "inn": "7743036835",
     "name": "\u0422\u0421\u0416 \u00ab\u0421\u041e\u041a\u041e\u041b\u0418\u041d\u041e\u0415 \u0413\u041d\u0415\u0417\u0414\u041e\u00bb",
     "ya_num": -1
   }
@@ -3728,7 +3754,7 @@
   "model": "tenant.company",
   "pk": 378,
   "fields": {
-    "inn": 7736131936,
+    "inn": "7736131936",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u043b\u0430\u0432\u043c\u043e\u0441\u0441\u0442\u0440\u043e\u0435\u0432\u0435\u0446\u00bb",
     "ya_num": -1
   }
@@ -3737,7 +3763,7 @@
   "model": "tenant.company",
   "pk": 379,
   "fields": {
-    "inn": 7733642682,
+    "inn": "7733642682",
     "name": "\u041e\u041e\u041e \u00ab\u0424\u044c\u044e\u0447\u0435\u0434\u0435\u0439 \u0421\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -3746,7 +3772,7 @@
   "model": "tenant.company",
   "pk": 380,
   "fields": {
-    "inn": 7732072694,
+    "inn": "7732072694",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0435\u0440\u0435\u0434\u0435\u043b\u043a\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -3755,7 +3781,7 @@
   "model": "tenant.company",
   "pk": 381,
   "fields": {
-    "inn": 7731040844,
+    "inn": "7731040844",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0442\u0430\u0440\u0442-\u0411\u0435\u043b\u043e\u0432\u0435\u0436\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3764,7 +3790,7 @@
   "model": "tenant.company",
   "pk": 382,
   "fields": {
-    "inn": 7729109305,
+    "inn": "7729109305",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0435\u043d\u0438\u043d\u0441\u043a\u0438\u0435 \u0433\u043e\u0440\u044b\u00bb",
     "ya_num": -1
   }
@@ -3773,7 +3799,7 @@
   "model": "tenant.company",
   "pk": 383,
   "fields": {
-    "inn": 7728117871,
+    "inn": "7728117871",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0443\u0437\u0430\u00bb",
     "ya_num": -1
   }
@@ -3782,7 +3808,7 @@
   "model": "tenant.company",
   "pk": 384,
   "fields": {
-    "inn": 7728088042,
+    "inn": "7728088042",
     "name": "\u0416\u0421\u041a \u00ab\u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -3791,7 +3817,7 @@
   "model": "tenant.company",
   "pk": 385,
   "fields": {
-    "inn": 7728027378,
+    "inn": "7728027378",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0430\u0432\u043b\u043e\u0432\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -3800,7 +3826,7 @@
   "model": "tenant.company",
   "pk": 386,
   "fields": {
-    "inn": 7727066494,
+    "inn": "7727066494",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u043b\u043e\u0434\u043e\u0439 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0441\u0442\u00bb",
     "ya_num": -1
   }
@@ -3809,7 +3835,7 @@
   "model": "tenant.company",
   "pk": 387,
   "fields": {
-    "inn": 7727020450,
+    "inn": "7727020450",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-13\u00bb",
     "ya_num": -1
   }
@@ -3818,7 +3844,7 @@
   "model": "tenant.company",
   "pk": 388,
   "fields": {
-    "inn": 7724180600,
+    "inn": "7724180600",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0434\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -3827,7 +3853,7 @@
   "model": "tenant.company",
   "pk": 389,
   "fields": {
-    "inn": 7724165480,
+    "inn": "7724165480",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0440\u0435\u0445\u043e\u0432\u044b\u0439\u00bb",
     "ya_num": -1
   }
@@ -3836,7 +3862,7 @@
   "model": "tenant.company",
   "pk": 390,
   "fields": {
-    "inn": 7720093756,
+    "inn": "7720093756",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u043d\u043e\u043c\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -3845,7 +3871,7 @@
   "model": "tenant.company",
   "pk": 391,
   "fields": {
-    "inn": 7720058430,
+    "inn": "7720058430",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0435\u043d\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -3854,7 +3880,7 @@
   "model": "tenant.company",
   "pk": 392,
   "fields": {
-    "inn": 7718938741,
+    "inn": "7718938741",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u0413\u043e\u043b\u044c\u044f\u043d\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -3863,7 +3889,7 @@
   "model": "tenant.company",
   "pk": 393,
   "fields": {
-    "inn": 7716104243,
+    "inn": "7716104243",
     "name": "\u0416\u0421\u041a \u00ab\u0420\u0430\u0434\u043e\u043d\u00bb",
     "ya_num": -1
   }
@@ -3872,7 +3898,7 @@
   "model": "tenant.company",
   "pk": 394,
   "fields": {
-    "inn": 7716053207,
+    "inn": "7716053207",
     "name": "\u0416\u0421\u041a \u00ab\u0423\u0433\u043b\u0435\u043c\u0430\u0448\u00bb",
     "ya_num": -1
   }
@@ -3881,7 +3907,7 @@
   "model": "tenant.company",
   "pk": 395,
   "fields": {
-    "inn": 7715048532,
+    "inn": "7715048532",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u043d\u0438\u0442\u043e\u0440\u00bb",
     "ya_num": -1
   }
@@ -3890,7 +3916,7 @@
   "model": "tenant.company",
   "pk": 396,
   "fields": {
-    "inn": 7714097382,
+    "inn": "7714097382",
     "name": "\u0416\u0421\u041a \u00ab\u0414\u0440\u0430\u043c\u0430\u0442\u0443\u0440\u0433\u00bb",
     "ya_num": -1
   }
@@ -3899,7 +3925,7 @@
   "model": "tenant.company",
   "pk": 397,
   "fields": {
-    "inn": 7713059465,
+    "inn": "7713059465",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-24\u00bb",
     "ya_num": -1
   }
@@ -3908,7 +3934,7 @@
   "model": "tenant.company",
   "pk": 398,
   "fields": {
-    "inn": 7710077138,
+    "inn": "7710077138",
     "name": "\u0422\u0421\u0416 \u00ab\u0422\u0432\u0435\u0440\u0441\u043a\u0430\u044f \u0437\u0430\u0441\u0442\u0430\u0432\u0430\u00bb",
     "ya_num": -1
   }
@@ -3917,7 +3943,7 @@
   "model": "tenant.company",
   "pk": 399,
   "fields": {
-    "inn": 7708000522,
+    "inn": "7708000522",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-22\u00bb",
     "ya_num": -1
   }
@@ -3926,7 +3952,7 @@
   "model": "tenant.company",
   "pk": 400,
   "fields": {
-    "inn": 7705639409,
+    "inn": "7705639409",
     "name": "\u0422\u0421\u0416 \u00ab\u0414\u043e\u043c \u043d\u0430 \u041a\u043b\u0438\u043c\u0435\u043d\u0442\u043e\u0432\u0441\u043a\u043e\u043c\u00bb",
     "ya_num": -1
   }
@@ -3935,7 +3961,7 @@
   "model": "tenant.company",
   "pk": 401,
   "fields": {
-    "inn": 7703116844,
+    "inn": "7703116844",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0430\u043b\u044b\u0439 \u0442\u0435\u0430\u0442\u0440\u00bb",
     "ya_num": -1
   }
@@ -3944,7 +3970,7 @@
   "model": "tenant.company",
   "pk": 402,
   "fields": {
-    "inn": 7701261892,
+    "inn": "7701261892",
     "name": "\u0422\u0421\u0416 \u00ab\u0425\u0430\u0440\u0438\u0442\u043e\u043d\u044c\u0435\u00bb",
     "ya_num": -1
   }
@@ -3953,7 +3979,7 @@
   "model": "tenant.company",
   "pk": 403,
   "fields": {
-    "inn": 7743087318,
+    "inn": "7743087318",
     "name": "\u0422\u0421\u0416 \u00ab\u0414\u0435\u0433\u0443\u043d\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -3962,7 +3988,7 @@
   "model": "tenant.company",
   "pk": 404,
   "fields": {
-    "inn": 7737019510,
+    "inn": "7737019510",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0430\u0439\u043d\u0435\u0440\u00bb",
     "ya_num": -1
   }
@@ -3971,7 +3997,7 @@
   "model": "tenant.company",
   "pk": 405,
   "fields": {
-    "inn": 7734060020,
+    "inn": "7734060020",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u043e\u0434\u043e\u043f\u0430\u0434\u00bb",
     "ya_num": -1
   }
@@ -3980,7 +4006,7 @@
   "model": "tenant.company",
   "pk": 406,
   "fields": {
-    "inn": 7733002812,
+    "inn": "7733002812",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-17\u00bb",
     "ya_num": -1
   }
@@ -3989,7 +4015,7 @@
   "model": "tenant.company",
   "pk": 407,
   "fields": {
-    "inn": 7731109990,
+    "inn": "7731109990",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u0430\u0440\u0430\u00bb",
     "ya_num": -1
   }
@@ -3998,7 +4024,7 @@
   "model": "tenant.company",
   "pk": 408,
   "fields": {
-    "inn": 7729524407,
+    "inn": "7729524407",
     "name": "\u041e\u041e\u041e \u00ab\u042e\u043d\u0438\u0441\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -4007,7 +4033,7 @@
   "model": "tenant.company",
   "pk": 409,
   "fields": {
-    "inn": 7728124460,
+    "inn": "7728124460",
     "name": "\u0416\u0421\u041a \u00ab\u0423\u043c\u0435\u0440\u0435\u043d\u043d\u044b\u0439\u00bb",
     "ya_num": -1
   }
@@ -4016,7 +4042,7 @@
   "model": "tenant.company",
   "pk": 410,
   "fields": {
-    "inn": 7728091711,
+    "inn": "7728091711",
     "name": "\u0416\u0421\u041a \u00ab\u0428\u0438\u0440\u043e\u0442\u0430\u00bb",
     "ya_num": -1
   }
@@ -4025,7 +4051,7 @@
   "model": "tenant.company",
   "pk": 411,
   "fields": {
-    "inn": 7728043098,
+    "inn": "7728043098",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0443\u0440\u044c\u0435\u0432\u00bb",
     "ya_num": -1
   }
@@ -4034,7 +4060,7 @@
   "model": "tenant.company",
   "pk": 412,
   "fields": {
-    "inn": 7727086758,
+    "inn": "7727086758",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-25\u00bb",
     "ya_num": -1
   }
@@ -4043,7 +4069,7 @@
   "model": "tenant.company",
   "pk": 413,
   "fields": {
-    "inn": 7727021983,
+    "inn": "7727021983",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-36\u041a\u00bb",
     "ya_num": -1
   }
@@ -4052,7 +4078,7 @@
   "model": "tenant.company",
   "pk": 414,
   "fields": {
-    "inn": 7724180745,
+    "inn": "7724180745",
     "name": "\u0416\u0421\u041a \u00ab\u042e\u0440\u043c\u0430\u043b\u0430\u00bb",
     "ya_num": -1
   }
@@ -4061,7 +4087,7 @@
   "model": "tenant.company",
   "pk": 415,
   "fields": {
-    "inn": 7724180248,
+    "inn": "7724180248",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0433\u0430\u0432\u0430\u00bb",
     "ya_num": -1
   }
@@ -4070,7 +4096,7 @@
   "model": "tenant.company",
   "pk": 416,
   "fields": {
-    "inn": 7723093835,
+    "inn": "7723093835",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u0430\u043a\u0442\u0443\u0441\u00bb",
     "ya_num": -1
   }
@@ -4079,7 +4105,7 @@
   "model": "tenant.company",
   "pk": 417,
   "fields": {
-    "inn": 7720059995,
+    "inn": "7720059995",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0430\u0448\u043f\u0440\u043e\u0435\u043a\u0442\u00bb",
     "ya_num": -1
   }
@@ -4088,7 +4114,7 @@
   "model": "tenant.company",
   "pk": 418,
   "fields": {
-    "inn": 7719077750,
+    "inn": "7719077750",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -4097,7 +4123,7 @@
   "model": "tenant.company",
   "pk": 419,
   "fields": {
-    "inn": 7716110134,
+    "inn": "7716110134",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u043b\u0435\u043d\u044c\u00bb",
     "ya_num": -1
   }
@@ -4106,7 +4132,7 @@
   "model": "tenant.company",
   "pk": 420,
   "fields": {
-    "inn": 7716067351,
+    "inn": "7716067351",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0430\u043b\u0445\u0430\u0448\u00bb",
     "ya_num": -1
   }
@@ -4115,7 +4141,7 @@
   "model": "tenant.company",
   "pk": 421,
   "fields": {
-    "inn": 7715082710,
+    "inn": "7715082710",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-24\u00bb",
     "ya_num": -1
   }
@@ -4124,7 +4150,7 @@
   "model": "tenant.company",
   "pk": 422,
   "fields": {
-    "inn": 7714663366,
+    "inn": "7714663366",
     "name": "\u041e\u041e\u041e \u0423\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u00ab\u0425\u043e\u0440\u043e\u0448\u0435\u0432\u043a\u0430-42\u00bb",
     "ya_num": -1
   }
@@ -4133,7 +4159,7 @@
   "model": "tenant.company",
   "pk": 423,
   "fields": {
-    "inn": 7713644804,
+    "inn": "7713644804",
     "name": "\u0422\u0421\u0416 \u00ab\u0410\u043d\u0433\u0430\u0440\u0441\u043a\u0430\u044f \u2014 47\u00bb",
     "ya_num": -1
   }
@@ -4142,7 +4168,7 @@
   "model": "tenant.company",
   "pk": 424,
   "fields": {
-    "inn": 7711026633,
+    "inn": "7711026633",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-22\u00bb",
     "ya_num": -1
   }
@@ -4151,7 +4177,7 @@
   "model": "tenant.company",
   "pk": 425,
   "fields": {
-    "inn": 7708648585,
+    "inn": "7708648585",
     "name": "\u0417\u0410\u041e \u00ab\u0423\u041a \u0414\u0415\u0417 \u041a\u0440\u0430\u0441\u043d\u043e\u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -4160,7 +4186,7 @@
   "model": "tenant.company",
   "pk": 426,
   "fields": {
-    "inn": 7705915874,
+    "inn": "7705915874",
     "name": "\u0422\u0421\u0416 \u00ab\u0411.\u0421\u0435\u0440\u043f\u0443\u0445\u043e\u0432\u0441\u043a\u0430\u044f 31/2\u00bb",
     "ya_num": -1
   }
@@ -4169,7 +4195,7 @@
   "model": "tenant.company",
   "pk": 427,
   "fields": {
-    "inn": 7704251740,
+    "inn": "7704251740",
     "name": "\u0422\u0421\u0416 \u00ab\u041a\u0430\u0440\u043c\u0430\u043d\u0438\u0446\u043a\u0438\u0439 10\u00bb",
     "ya_num": -1
   }
@@ -4178,7 +4204,7 @@
   "model": "tenant.company",
   "pk": 428,
   "fields": {
-    "inn": 7703103884,
+    "inn": "7703103884",
     "name": "\u0422\u0421\u0416 \u00ab\u041d\u0430 \u0443\u043b\u0438\u0446\u0435 \u041d\u0435\u0436\u0434\u0430\u043d\u043e\u0432\u043e\u0439\u00bb",
     "ya_num": -1
   }
@@ -4187,7 +4213,7 @@
   "model": "tenant.company",
   "pk": 429,
   "fields": {
-    "inn": 7709645918,
+    "inn": "7709645918",
     "name": "\u041d\u0435\u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u041f\u0430\u0440\u0442\u043d\u0435\u0440\u0441\u0442\u0432\u043e \u00ab\u0421\u043e\u0434\u0440\u0443\u0436\u0435\u0441\u0442\u0432\u043e \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a\u043e\u0432 \u0436\u0438\u043b\u044c\u044f \u00ab\u0424\u0410\u041a\u0415\u041b\u00bb",
     "ya_num": -1
   }
@@ -4196,7 +4222,7 @@
   "model": "tenant.company",
   "pk": 430,
   "fields": {
-    "inn": 7704047103,
+    "inn": "7704047103",
     "name": "\u0416\u0421\u041a \u0413\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0410\u043a\u0430\u0434\u0435\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0411\u043e\u043b\u044c\u0448\u043e\u0433\u043e \u0442\u0435\u0430\u0442\u0440\u0430 \u00ab\u041b\u0418\u0420\u0410\u00bb",
     "ya_num": -1
   }
@@ -4205,7 +4231,7 @@
   "model": "tenant.company",
   "pk": 431,
   "fields": {
-    "inn": 7713644226,
+    "inn": "7713644226",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0414\u0415\u0417 \u0440\u0430\u0439\u043e\u043d\u0430 \u0414\u043c\u0438\u0442\u0440\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4214,7 +4240,7 @@
   "model": "tenant.company",
   "pk": 432,
   "fields": {
-    "inn": 7734637974,
+    "inn": "7734637974",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0420\u0415\u0421\u0423\u0420\u0421\u042d\u041d\u0415\u0420\u0413\u041e\u041f\u0420\u041e\u041c\u00bb",
     "ya_num": -1
   }
@@ -4223,7 +4249,7 @@
   "model": "tenant.company",
   "pk": 433,
   "fields": {
-    "inn": 7713593860,
+    "inn": "7713593860",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0440\u0430\u0439\u043e\u043d\u0430 \u00ab\u0411\u0435\u0441\u043a\u0443\u0434\u043d\u0438\u043a\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4232,7 +4258,7 @@
   "model": "tenant.company",
   "pk": 434,
   "fields": {
-    "inn": 7743615208,
+    "inn": "7743615208",
     "name": "\u041e\u041e\u041e \u00ab\u0423\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0414\u0438\u0440\u0435\u043a\u0446\u0438\u044f \u042d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u0438 \u0417\u0434\u0430\u043d\u0438\u0439 \u0413\u043e\u043b\u043e\u0432\u0438\u043d\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4241,7 +4267,7 @@
   "model": "tenant.company",
   "pk": 435,
   "fields": {
-    "inn": 7737028240,
+    "inn": "7737028240",
     "name": "\u0413\u0423\u041f \u00ab\u0414\u0415\u0417 \u0440\u0430\u0439\u043e\u043d\u0430 \u0411\u0438\u0440\u044e\u043b\u0435\u0432\u043e-\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u043e\u0435\u00bb",
     "ya_num": -1
   }
@@ -4250,7 +4276,7 @@
   "model": "tenant.company",
   "pk": 436,
   "fields": {
-    "inn": 7702018080,
+    "inn": "7702018080",
     "name": "\u0413\u0423\u041f \u00ab\u0414\u0415\u0417 \u041c\u0435\u0449\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -4259,7 +4285,7 @@
   "model": "tenant.company",
   "pk": 437,
   "fields": {
-    "inn": 7708005016,
+    "inn": "7708005016",
     "name": "\u0413\u0423\u041f \u00ab\u0414\u0415\u0417 \u0440\u0430\u0439\u043e\u043d\u0430 \u041a\u0440\u0430\u0441\u043d\u043e\u0441\u0435\u043b\u044c\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4268,7 +4294,7 @@
   "model": "tenant.company",
   "pk": 438,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u211614",
     "ya_num": -1
   }
@@ -4277,7 +4303,7 @@
   "model": "tenant.company",
   "pk": 439,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u211613",
     "ya_num": -1
   }
@@ -4286,7 +4312,7 @@
   "model": "tenant.company",
   "pk": 440,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u211611",
     "ya_num": -1
   }
@@ -4295,7 +4321,7 @@
   "model": "tenant.company",
   "pk": 441,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u211610",
     "ya_num": -1
   }
@@ -4304,7 +4330,7 @@
   "model": "tenant.company",
   "pk": 442,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u21169",
     "ya_num": -1
   }
@@ -4313,7 +4339,7 @@
   "model": "tenant.company",
   "pk": 443,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u21168",
     "ya_num": -1
   }
@@ -4322,7 +4348,7 @@
   "model": "tenant.company",
   "pk": 444,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u21165",
     "ya_num": -1
   }
@@ -4331,7 +4357,7 @@
   "model": "tenant.company",
   "pk": 445,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u21164",
     "ya_num": -1
   }
@@ -4340,7 +4366,7 @@
   "model": "tenant.company",
   "pk": 446,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414 \u0424\u0438\u043b\u0438\u0430\u043b \u21162",
     "ya_num": -1
   }
@@ -4349,7 +4375,7 @@
   "model": "tenant.company",
   "pk": 447,
   "fields": {
-    "inn": 7704010270,
+    "inn": "7704010270",
     "name": "\u0413\u0423\u041f \u042d\u0412\u0410\u0416\u0414",
     "ya_num": -1
   }
@@ -4358,7 +4384,7 @@
   "model": "tenant.company",
   "pk": 448,
   "fields": {
-    "inn": 7701023471,
+    "inn": "7701023471",
     "name": "\u0413\u0423\u041f \u00ab\u0414\u0415\u0417 \u0411\u0430\u0441\u043c\u0430\u043d\u043d\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -4367,7 +4393,7 @@
   "model": "tenant.company",
   "pk": 449,
   "fields": {
-    "inn": 7709121103,
+    "inn": "7709121103",
     "name": "\u0413\u0423\u041f \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a-1\u00bb",
     "ya_num": -1
   }
@@ -4376,7 +4402,7 @@
   "model": "tenant.company",
   "pk": 450,
   "fields": {
-    "inn": 7727025755,
+    "inn": "7727025755",
     "name": "\u041e\u0410\u041e \u0414\u0415\u0417 \u00ab\u042e\u0436\u043d\u043e\u0435 \u0411\u0443\u0442\u043e\u0432\u043e\u00bb",
     "ya_num": -1
   }
@@ -4385,7 +4411,7 @@
   "model": "tenant.company",
   "pk": 451,
   "fields": {
-    "inn": 7726746592,
+    "inn": "7726746592",
     "name": "\u041e\u041e\u041e \u00ab\u0422\u0435\u0440\u043c\u043e\u0438\u043d\u0436\u0441\u0435\u0440\u0432\u0438\u0441\u00bb",
     "ya_num": -1
   }
@@ -4394,7 +4420,7 @@
   "model": "tenant.company",
   "pk": 452,
   "fields": {
-    "inn": 778599482974,
+    "inn": "778599482974",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u043c\u0431\u043b\u0435\u043c\u0430\u00bb",
     "ya_num": -1
   }
@@ -4403,7 +4429,7 @@
   "model": "tenant.company",
   "pk": 453,
   "fields": {
-    "inn": 770948788915,
+    "inn": "770948788915",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u0440\u0430\u0439\u043e\u043d\u0430 \u0421\u0442\u0440\u043e\u0433\u0438\u043d\u043e\u00bb",
     "ya_num": -1
   }
@@ -4412,7 +4438,7 @@
   "model": "tenant.company",
   "pk": 454,
   "fields": {
-    "inn": 770356702184,
+    "inn": "770356702184",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-28\u00bb",
     "ya_num": -1
   }
@@ -4421,7 +4447,7 @@
   "model": "tenant.company",
   "pk": 455,
   "fields": {
-    "inn": 777779581924,
+    "inn": "777779581924",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0434\u0435\u043d\u043d\u043e\u0432\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -4430,7 +4456,7 @@
   "model": "tenant.company",
   "pk": 456,
   "fields": {
-    "inn": 772471584173,
+    "inn": "772471584173",
     "name": "\u0416\u0421\u041a \u00ab\u0424\u0435\u043e\u0434\u043e\u0441\u0438\u044f\u00bb",
     "ya_num": -1
   }
@@ -4439,7 +4465,7 @@
   "model": "tenant.company",
   "pk": 457,
   "fields": {
-    "inn": 773666439479,
+    "inn": "773666439479",
     "name": "\u0416\u0421\u041a \u00ab\u042f\u0445\u0440\u043e\u043c\u0430\u00bb",
     "ya_num": -1
   }
@@ -4448,7 +4474,7 @@
   "model": "tenant.company",
   "pk": 458,
   "fields": {
-    "inn": 777661456498,
+    "inn": "777661456498",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0435\u043d\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -4457,7 +4483,7 @@
   "model": "tenant.company",
   "pk": 459,
   "fields": {
-    "inn": 774849714255,
+    "inn": "774849714255",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0430\u0433\u0430\u0440\u0438\u043d\u0435\u0446\u00bb",
     "ya_num": -1
   }
@@ -4466,7 +4492,7 @@
   "model": "tenant.company",
   "pk": 460,
   "fields": {
-    "inn": 774454984906,
+    "inn": "774454984906",
     "name": "\u0416\u0421\u041a \u00ab\u0422\u0435\u0440\u0435\u043a\u00bb",
     "ya_num": -1
   }
@@ -4475,7 +4501,7 @@
   "model": "tenant.company",
   "pk": 461,
   "fields": {
-    "inn": 772703629636,
+    "inn": "772703629636",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-15\u00bb",
     "ya_num": -1
   }
@@ -4484,7 +4510,7 @@
   "model": "tenant.company",
   "pk": 462,
   "fields": {
-    "inn": 772107171790,
+    "inn": "772107171790",
     "name": "\u0413\u0411\u0423 \u00ab\u0416\u0438\u043b\u0438\u0449\u043d\u0438\u043a \u041d\u0430\u0433\u043e\u0440\u043d\u043e\u0433\u043e \u0440\u0430\u0439\u043e\u043d\u0430\u00bb",
     "ya_num": -1
   }
@@ -4493,7 +4519,7 @@
   "model": "tenant.company",
   "pk": 463,
   "fields": {
-    "inn": 773719017588,
+    "inn": "773719017588",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-11\u00bb",
     "ya_num": -1
   }
@@ -4502,7 +4528,7 @@
   "model": "tenant.company",
   "pk": 464,
   "fields": {
-    "inn": 773111773313,
+    "inn": "773111773313",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-16\u00bb",
     "ya_num": -1
   }
@@ -4511,7 +4537,7 @@
   "model": "tenant.company",
   "pk": 465,
   "fields": {
-    "inn": 777579736266,
+    "inn": "777579736266",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043b\u0430\u0433\u043e\u0432\u0435\u0449\u0435\u043d\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -4520,7 +4546,7 @@
   "model": "tenant.company",
   "pk": 466,
   "fields": {
-    "inn": 773865102342,
+    "inn": "773865102342",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u0418\u041f\u0418\u00bb",
     "ya_num": -1
   }
@@ -4529,7 +4555,7 @@
   "model": "tenant.company",
   "pk": 467,
   "fields": {
-    "inn": 772978218128,
+    "inn": "772978218128",
     "name": "\u0416\u0421\u041a \u00ab\u0428\u0438\u043f\u0438\u043b\u043e\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4538,7 +4564,7 @@
   "model": "tenant.company",
   "pk": 468,
   "fields": {
-    "inn": 774650015321,
+    "inn": "774650015321",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u043e\u0441\u0442\u0435\u0445\u043d\u0438\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -4547,7 +4573,7 @@
   "model": "tenant.company",
   "pk": 469,
   "fields": {
-    "inn": 770105381018,
+    "inn": "770105381018",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0447\u0430\u043a\u043e\u0432\u00bb",
     "ya_num": -1
   }
@@ -4556,7 +4582,7 @@
   "model": "tenant.company",
   "pk": 470,
   "fields": {
-    "inn": 776406422920,
+    "inn": "776406422920",
     "name": "\u0416\u0421\u041a \u00ab\u041b\u0438\u043c\u0431\u00bb",
     "ya_num": -1
   }
@@ -4565,7 +4591,7 @@
   "model": "tenant.company",
   "pk": 471,
   "fields": {
-    "inn": 772269730892,
+    "inn": "772269730892",
     "name": "\u0416\u0421\u041a \u00ab\u041d\u043e\u0432\u043e\u0433\u0438\u0440\u0435\u0435\u0432\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4574,7 +4600,7 @@
   "model": "tenant.company",
   "pk": 472,
   "fields": {
-    "inn": 779505712874,
+    "inn": "779505712874",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u043e\u043b\u044c\u044f\u043d\u043e\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432 \u041a\u0413\u0411\u00bb",
     "ya_num": -1
   }
@@ -4583,7 +4609,7 @@
   "model": "tenant.company",
   "pk": 473,
   "fields": {
-    "inn": 772514619558,
+    "inn": "772514619558",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u043b\u0438\u0437\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4592,7 +4618,7 @@
   "model": "tenant.company",
   "pk": 474,
   "fields": {
-    "inn": 771044647199,
+    "inn": "771044647199",
     "name": "\u0416\u0421\u041a \u00ab\u0413\u043e\u0441\u0441\u0442\u0440\u043e\u0435\u0432\u0435\u0446\u00bb",
     "ya_num": -1
   }
@@ -4601,7 +4627,7 @@
   "model": "tenant.company",
   "pk": 475,
   "fields": {
-    "inn": 774908104922,
+    "inn": "774908104922",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-30\u00bb",
     "ya_num": -1
   }
@@ -4610,7 +4636,7 @@
   "model": "tenant.company",
   "pk": 476,
   "fields": {
-    "inn": 770044983413,
+    "inn": "770044983413",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u043b\u0435\u0445\u0430\u043d\u043e\u0432\u0435\u0446\u00bb",
     "ya_num": -1
   }
@@ -4619,7 +4645,7 @@
   "model": "tenant.company",
   "pk": 477,
   "fields": {
-    "inn": 776521964312,
+    "inn": "776521964312",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0440\u0448\u0430\u00bb",
     "ya_num": -1
   }
@@ -4628,7 +4654,7 @@
   "model": "tenant.company",
   "pk": 478,
   "fields": {
-    "inn": 776351118070,
+    "inn": "776351118070",
     "name": "\u0416\u0421\u041a \u00ab\u041f\u0447\u0435\u043b\u043a\u0430\u00bb",
     "ya_num": -1
   }
@@ -4637,7 +4663,7 @@
   "model": "tenant.company",
   "pk": 479,
   "fields": {
-    "inn": 772258398072,
+    "inn": "772258398072",
     "name": "\u0416\u0421\u041a \u00ab\u041a\u043e\u043b\u0445\u0438\u0434\u0430\u00bb",
     "ya_num": -1
   }
@@ -4646,7 +4672,7 @@
   "model": "tenant.company",
   "pk": 480,
   "fields": {
-    "inn": 772173071158,
+    "inn": "772173071158",
     "name": "\u0416\u0421\u041a \u00ab\u0412\u0435\u0440\u0435\u044f\u00bb",
     "ya_num": -1
   }
@@ -4655,7 +4681,7 @@
   "model": "tenant.company",
   "pk": 481,
   "fields": {
-    "inn": 771234298387,
+    "inn": "771234298387",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0430\u044f \u043f\u0440\u0435\u0441\u0441\u0430\u00bb",
     "ya_num": -1
   }
@@ -4664,7 +4690,7 @@
   "model": "tenant.company",
   "pk": 482,
   "fields": {
-    "inn": 771920956316,
+    "inn": "771920956316",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0443\u0442\u043e\u0432\u043e-17\u00bb",
     "ya_num": -1
   }
@@ -4673,7 +4699,7 @@
   "model": "tenant.company",
   "pk": 483,
   "fields": {
-    "inn": 772743128463,
+    "inn": "772743128463",
     "name": "\u0416\u0421\u041a \u00ab\u0411\u0430\u043b\u0442\u0438\u0439\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -4682,7 +4708,7 @@
   "model": "tenant.company",
   "pk": 484,
   "fields": {
-    "inn": 779842570089,
+    "inn": "779842570089",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043f\u043b\u0430\u0432\u00bb",
     "ya_num": -1
   }
@@ -4691,7 +4717,7 @@
   "model": "tenant.company",
   "pk": 485,
   "fields": {
-    "inn": 771350950283,
+    "inn": "771350950283",
     "name": "\u0417\u0410\u041e \u0416\u0438\u043b\u0438\u0449\u043d\u043e-\u044d\u043a\u0441\u043f\u043b\u0443\u0430\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0435 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0435 \u00ab\u0418\u043c\u043f\u0443\u043b\u044c\u0441-\u0416\u0438\u043b\u0441\u0442\u0440\u043e\u0439\u00bb",
     "ya_num": -1
   }
@@ -4700,7 +4726,7 @@
   "model": "tenant.company",
   "pk": 486,
   "fields": {
-    "inn": 777001671703,
+    "inn": "777001671703",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u0438\u0442\u0438\u043d\u043e-20\u00bb",
     "ya_num": -1
   }
@@ -4709,7 +4735,7 @@
   "model": "tenant.company",
   "pk": 487,
   "fields": {
-    "inn": 771683344774,
+    "inn": "771683344774",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u043c\u043e\u043b\u0435\u043d\u0441\u043a\u00bb",
     "ya_num": -1
   }
@@ -4718,7 +4744,7 @@
   "model": "tenant.company",
   "pk": 488,
   "fields": {
-    "inn": 775783099880,
+    "inn": "775783099880",
     "name": "\u0416\u0421\u041a \u00ab\u0410\u043c\u0443\u0440\u0441\u043a\u0438\u0439\u00bb",
     "ya_num": -1
   }
@@ -4727,7 +4753,7 @@
   "model": "tenant.company",
   "pk": 489,
   "fields": {
-    "inn": 773391592843,
+    "inn": "773391592843",
     "name": "\u0416\u0421\u041a \u00ab\u042d\u0444\u0438\u0440-\u044d\u043a\u0440\u0430\u043d\u00bb",
     "ya_num": -1
   }
@@ -4736,7 +4762,7 @@
   "model": "tenant.company",
   "pk": 490,
   "fields": {
-    "inn": 772541193983,
+    "inn": "772541193983",
     "name": "\u0416\u0421\u041a \u00ab\u041e\u0420\u0421\u041a\u00bb",
     "ya_num": -1
   }
@@ -4745,7 +4771,7 @@
   "model": "tenant.company",
   "pk": 491,
   "fields": {
-    "inn": 779596068326,
+    "inn": "779596068326",
     "name": "\u0416\u0421\u041a \u00ab\u0418\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u00bb",
     "ya_num": -1
   }
@@ -4754,7 +4780,7 @@
   "model": "tenant.company",
   "pk": 492,
   "fields": {
-    "inn": 773779564989,
+    "inn": "773779564989",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-50\u041a\u00bb",
     "ya_num": -1
   }
@@ -4763,7 +4789,7 @@
   "model": "tenant.company",
   "pk": 493,
   "fields": {
-    "inn": 778211363186,
+    "inn": "778211363186",
     "name": "\u0416\u041a \u00ab\u0421\u043e\u044e\u0437-20\u00bb",
     "ya_num": -1
   }
@@ -4772,7 +4798,7 @@
   "model": "tenant.company",
   "pk": 494,
   "fields": {
-    "inn": 777310743229,
+    "inn": "777310743229",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-17\u00bb",
     "ya_num": -1
   }
@@ -4781,7 +4807,7 @@
   "model": "tenant.company",
   "pk": 495,
   "fields": {
-    "inn": 779961887051,
+    "inn": "779961887051",
     "name": "\u0416\u0421\u041a \u00ab\u041c\u043e\u0441\u043a\u0432\u043e\u0440\u0435\u0447\u044c\u0435-15 \u00ab",
     "ya_num": -1
   }
@@ -4790,8 +4816,17 @@
   "model": "tenant.company",
   "pk": 496,
   "fields": {
-    "inn": 771874794556,
+    "inn": "771874794556",
     "name": "\u0416\u0421\u041a \u00ab\u0421\u0442\u0440\u0430\u0442\u043e\u0441\u0444\u0435\u0440\u0430\u00bb",
+    "ya_num": -1
+  }
+},
+{
+  "model": "tenant.company",
+  "pk": 497,
+  "fields": {
+    "inn": "7731282311",
+    "name": "\u0422\u0421\u0416 \u00ab\u041a\u0440\u044b\u043b\u044c\u044f\u00bb",
     "ya_num": -1
   }
 },
@@ -35438,6 +35473,16 @@
   "pk": 6,
   "fields": {
     "user": 14,
+    "company": null,
+    "photo": "static/default.jpg",
+    "is_admin": false
+  }
+},
+{
+  "model": "tenant.manager",
+  "pk": 7,
+  "fields": {
+    "user": 18,
     "company": null,
     "photo": "static/default.jpg",
     "is_admin": false
@@ -74162,6 +74207,15 @@
   }
 },
 {
+  "model": "tenant.forum",
+  "pk": 4303,
+  "fields": {
+    "house": null,
+    "company": 497,
+    "categories": "\u041e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f|\u0414\u0440\u0443\u0433\u043e\u0435"
+  }
+},
+{
   "model": "tenant.discussion",
   "pk": 1,
   "fields": {
@@ -74543,6 +74597,18 @@
   }
 },
 {
+  "model": "tenant.comment",
+  "pk": 23,
+  "fields": {
+    "text": "\u0414\u0430, \u0432 \u0432\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u0438\u0435 30 \u0433\u0440\u0430\u0434\u0443\u0441\u043e\u0432!!",
+    "discussion": null,
+    "author": 6,
+    "cr_date": "2020-06-05T01:50:03.031Z",
+    "thread": 9,
+    "anon": false
+  }
+},
+{
   "model": "tenant.appeal",
   "pk": 1,
   "fields": {
@@ -74897,6 +74963,14 @@
     "publicationTitle": "\u041c\u0430\u0442\u0447 \u0432\u0435\u043a\u0430",
     "publicationText": "18 \u0438\u044e\u043d\u044f \u0441\u043e\u0441\u0442\u043e\u0438\u0442\u0441\u044f \u043c\u0430\u0442\u0447 \u0432\u0435\u043a\u0430 \u043c\u0435\u0436\u0434\u0443 \u0434\u043e\u043c\u0430\u043c\u0438 *\u0423\u043b\u0438\u0446\u0430 \u0413\u0435\u0440\u0430\u0441\u0438\u043c\u0430 \u041a\u0443\u0440\u0438\u043d\u0430 26* \u0438 *\u041a\u043e\u0441\u0442\u0430\u043d\u0430\u0435\u0432\u0441\u043a\u0430\u044f 45\u043a2*. \u041a\u043e\u043c\u0430\u043d\u0434\u044b \u043f\u043e 30 \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u0431\u0443\u0434\u0443\u0442 \u0438\u0433\u0440\u0430\u0442\u044c \u0432\u0435\u0441\u044c \u0434\u0435\u043d\u044c. \u0421\u043c\u0435\u043d\u044b \u043f\u0440\u043e\u0438\u0441\u0445\u043e\u0434\u044f\u0442 \u0440\u0430\u0437 \u0432 \u0447\u0430\u0441. \u041f\u0440\u0438\u0445\u043e\u0434\u0438\u0442\u0435 \u043f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u043d\u0430 \u043b\u0435\u0433\u0435\u043d\u0434\u0430\u0440\u043d\u043e\u0435 \u0441\u043e\u0431\u044b\u0442\u0438\u0435!!\n![\u0444\u0443\u0442\u0431\u043e\u043b](https://www.dk-yamkino.ru/media/2018/08/14/1227665324/image_image_4651677.jpg)",
     "donation_on": false
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
   }
 }
 ]
